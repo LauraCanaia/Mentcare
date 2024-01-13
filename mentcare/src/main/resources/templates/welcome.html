@@ -52,6 +52,9 @@
 <header>
     <div class="user-banner">
         <h2><span th:text="${username}"></span></h2>
+        <a th:href="@{/logout}" style="text-decoration: none;">
+            <button type="button">Logout</button>
+        </a>
     </div>
 </header>
 
@@ -63,11 +66,5 @@
     <h1>Welcome to Mentcare</h1>
     <!-- Contenuto della tua pagina di benvenuto -->
 </div>
-
-<script>
-    // Aggiorna l'username nel banner con quello effettivo (può essere fatto lato server)
-    var username = "JohnDoe"; // Sostituisci con l'username reale
-    document.getElementById("usernamePlaceholder").innerText = username;
-</script>
 </body>
 </html>

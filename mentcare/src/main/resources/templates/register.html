@@ -50,6 +50,16 @@
             font-size: 16px;
         }
 
+        .error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        .error-message2 {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
         .register-container button {
             background-color: #ffffff; /* Sfondo bianco */
             color: #4CAF50; /* Testo verde */
@@ -88,8 +98,16 @@
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+        <label for="fiscalcode">Fiscal Code:</label>
+        <input type="text" id="fiscalcode" name="fiscalcode" required>
+        <br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required
+               onmouseover="showPasswordHint()" onmouseout="hidePasswordHint()">
+        <span id="passwordHint" style="color: gray;"> Password: min 8 caratteri</span>
         <br>
         <button type="submit">Register</button>
     </form>
@@ -97,6 +115,23 @@
         <span>Already have an account? </span>
         <a th:href="@{/login}">Login here</a>
     </div>
+    <div th:if="${errorFiscalCode}" class="error-message">
+        <p th:text="${errorFiscalCode}"></p>
+    </div>
+    <div th:if="${errorPassword}" class="error-message2">
+        <p th:text="${errorPassword}"></p>
+    </div>
 </div>
 </body>
+<script>
+    function showPasswordHint() {
+        var passwordHint = document.getElementById("passwordHint");
+        passwordHint.style.display = 'block';
+    }
+
+    function hidePasswordHint() {
+        var passwordHint = document.getElementById("passwordHint");
+        passwordHint.style.display = 'none';
+    }
+</script>
 </html>

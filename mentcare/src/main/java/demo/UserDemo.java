@@ -11,16 +11,16 @@ public class UserDemo {
     @PostConstruct
     public void init() {
         // Carica due utenti predefiniti al momento dell'avvio
-        User user1 = new User("lautaro", "inter");
-        User user2 = new User("stefano", "sansiro");
+        User user1 = new User("lautaro", "martinez", "MRTLTR90A01A539U", "inter");
+        User user2 = new User("stefano", "modenese", "MRTLTR90A01A539U", "sansiro");
 
         userRepository.save(user1);
         userRepository.save(user2);
     }
 
     public boolean addDemoData () {
-        User user1 = new User("sofia", "modenese");
-        User user2 = new User("davide", "baruh");
+        User user1 = new User("sofia", "modenese", "MDNSFO00B53E512S", "bubi");
+        User user2 = new User("davide", "baruh", "BRHDVD00L25L359K", "sofi");
 
         userRepository.save(user1);
         userRepository.save(user2);

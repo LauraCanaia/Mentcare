@@ -45,6 +45,11 @@ public class AppController {
         return "mentcare";
     }
 
+    @GetMapping("/logout")
+    public String logout() {
+        return "redirect:/login";
+    }
+
     @RequestMapping("/list")
     public String list(Model model){
         List<Person> data = new LinkedList<>();
