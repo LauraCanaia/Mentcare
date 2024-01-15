@@ -49,6 +49,14 @@ public class VisitTest {
         Assert.assertEquals("SERIOUS random motivation", visit.getMotivation());
     }
 
-    
+    @Test
+    public void userSetterAndGetter()
+    {
+        Visit visit = new Visit();
+        Assert.assertNull(visit.getUser());
+        User user = new User("Laura", "Canaia", "CNALRA99H42L157X", "Lampadario145!");
+        visit.setUser(user);
+        Assert.assertEquals(user, visit.getUser());
+    }
 
 }
