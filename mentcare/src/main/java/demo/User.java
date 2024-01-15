@@ -20,8 +20,6 @@ public class User {
 
     public User(String username, String lastname, String fiscalCode, String password) {
         this.username = username;
-        this.lastname = lastname;
-        this.fiscalCode = fiscalCode;
         this.password = password;
         this.lastname = lastname;
         this.fiscalCode = fiscalCode;
@@ -35,8 +33,6 @@ public class User {
 
     public User() {
         this.username = "";
-        this.lastname = "";
-        this.fiscalCode = "";
         this.password = "";
         this.lastname = "";
         this.fiscalCode = "";
