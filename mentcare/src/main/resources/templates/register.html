@@ -1,0 +1,137 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Mentcare</title>
+
+    <!-- Stili CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #4CAF50; /* Verde */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #ffffff; /* Testo bianco */
+        }
+
+        .register-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .register-container label {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .register-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        .error-message2 {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+
+        .register-container button {
+            background-color: #ffffff; /* Sfondo bianco */
+            color: #4CAF50; /* Testo verde */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .register-container button:hover {
+            background-color: #e0e0e0; /* Sfondo grigio chiaro al passaggio del mouse */
+        }
+
+        .login-link {
+            color: #ffffff; /* Link bianco */
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #ffffff; /* Link bianco */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="register-container">
+    <h1>Registration</h1>
+    <form action="/register" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br>
+        <label for="fiscalcode">Fiscal Code:</label>
+        <input type="text" id="fiscalcode" name="fiscalcode" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required
+               onmouseover="showPasswordHint()" onmouseout="hidePasswordHint()">
+        <span id="passwordHint" style="color: gray;"> Password: min 8 caratteri</span>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+    <div class="login-link">
+        <span>Already have an account? </span>
+        <a th:href="@{/login}">Login here</a>
+    </div>
+    <div th:if="${errorFiscalCode}" class="error-message">
+        <p th:text="${errorFiscalCode}"></p>
+    </div>
+    <div th:if="${errorPassword}" class="error-message2">
+        <p th:text="${errorPassword}"></p>
+    </div>
+</div>
+</body>
+<script>
+    function showPasswordHint() {
+        var passwordHint = document.getElementById("passwordHint");
+        passwordHint.style.display = 'block';
+    }
+
+    function hidePasswordHint() {
+        var passwordHint = document.getElementById("passwordHint");
+        passwordHint.style.display = 'none';
+    }
+</script>
+</html>

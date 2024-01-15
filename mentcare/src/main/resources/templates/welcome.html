@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentcare - Benvenuto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .welcome-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        .user-banner {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .action-buttons {
+            text-align: center;
+        }
+
+        .action-buttons button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="user-banner">
+        <h2><span th:text="${username}"></span></h2>
+        <a th:href="@{/logout}" style="text-decoration: none;">
+            <button type="button">Logout</button>
+        </a>
+        <a th:href="@{'/addVisit/' + ${username}}" style="text-decoration: none;">
+            <button type="button">Aggiungi Visita</button>
+        </a>
+    </div>
+</header>
+
+<div class="logo">
+    <img src="/img/mentcare.png" alt="Mentcare Logo">
+</div>
+
+<div class="welcome-container">
+    <h1>Welcome to Mentcare</h1>
+    <!-- Contenuto della tua pagina di benvenuto -->
+    <table>
+        <thead>
+        <tr>
+            <th>Data</th>
+            <th>Orario</th>
+            <th>Motivazione</th>
+            <th>Id visita</th>
+            <th class="action-buttons">Azioni</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Itera attraverso le visite mediche -->
+        <tr th:each="visit : ${visits}">
+            <td th:text="${visit.date}"></td>
+            <td th:text="${visit.time}"></td>
+            <td th:text="${visit.motivation}"></td>
+            <td th:text="${visit.id}"></td>
+            <td class="action-buttons">
+                <!-- Aggiungi pulsante di modifica -->
+                <a th:href="@{'/editVisit/' + ${visit.id}}" style="text-decoration: none;">
+                    <button type="button">Modifica</button>
+                </a>
+                <!-- Aggiungi pulsante di eliminazione -->
+                <a th:href="@{'/deleteVisit/' + ${visit.id}}" style="text-decoration: none;">
+                    <button type="button">Elimina</button>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

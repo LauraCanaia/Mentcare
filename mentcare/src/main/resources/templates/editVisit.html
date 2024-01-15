@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentcare - Modifica Visita</title>
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<!-- Modulo di modifica visita -->
+<form action="/saveVisit" method="post">
+  <!-- Campo nascosto per l'ID della visita -->
+  <input type="hidden" name="visitId" th:value="${visit.id}" />
+
+  <!-- Altri campi del modulo, ad esempio, data, orario, motivazione -->
+  <label>Data:</label>
+  <input type="text" name="date" th:value="${visit.date}" placeholder="Inserisci la nuova data" required/>
+
+  <label>Orario:</label>
+  <input type="text" name="time" th:value="${visit.time}" placeholder="Inserisci il nuovo orario" required/>
+
+  <label>Motivazione:</label>
+  <input type="text" name="motivation" th:value="${visit.motivation}" placeholder="Inserisci la nuova motivazione" required/>
+
+  <button type="submit">Salva Modifiche</button>
+</form>
+
+<!-- Altri contenuti, se necessario -->
+</body>
+</html>
