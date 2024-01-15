@@ -14,8 +14,8 @@ public class DataLoader {
     @PostConstruct
     public void init() {
         // Inizializza il repository con un utente
-        User user = new User("stefano", "1234");
-        User user2 = new User("laura", "5678");
+        User user = new User("stefano", "modenese", "MDNSFN00B13E512N", "1234");
+        User user2 = new User("laura", "canaia", "CNALRA99C42L781O", "5678");
         userRepository.save(user);
         userRepository.save(user2);
     }

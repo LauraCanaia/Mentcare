@@ -12,23 +12,30 @@ public class User {
     private Long id;
     private String username;
 
+    private String lastname;
+    private String fiscalCode;
+
     private String password;
 
-    public User(String username, String password) {
+    public User(String username, String lastname, String fiscalCode, String password) {
         this.username = username;
+        this.lastname = lastname;
+        this.fiscalCode = fiscalCode;
         this.password = password;
     }
 
     public User() {
         this.username = "";
+        this.lastname = "";
+        this.fiscalCode = "";
         this.password = "";
     }
 
     @Override
     public String toString () {
         return String.format(
-                "User[username='%s', lastname='%s', code='%s' password='%s']",
-                username, password);
+                "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
+                username, lastname, fiscalCode, password);
     }
 
     public String getUsername () {
@@ -38,6 +45,10 @@ public class User {
     public String getPassword () {
         return this.password;
     }
+
+    public String getLastname () { return this.lastname; }
+
+    public String getFiscalCode () { return this.fiscalCode; }
 
     public void setUsername (String username) {
         this.username = username;
