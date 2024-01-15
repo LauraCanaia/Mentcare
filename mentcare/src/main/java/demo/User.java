@@ -20,8 +20,6 @@ public class User {
 
     public User(String username, String lastname, String fiscalCode, String password) {
         this.username = username;
-        this.lastname = lastname;
-        this.fiscalCode = fiscalCode;
         this.password = password;
         this.lastname = lastname;
         this.fiscalCode = fiscalCode;
@@ -35,8 +33,6 @@ public class User {
 
     public User() {
         this.username = "";
-        this.lastname = "";
-        this.fiscalCode = "";
         this.password = "";
         this.lastname = "";
         this.fiscalCode = "";
@@ -48,7 +44,6 @@ public class User {
     @Override
     public String toString () {
         return String.format(
-                "User[username='%s', lastname='%s', code='%s' password='%s']",
                 "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
                 username, lastname, fiscalCode, password);
     }
