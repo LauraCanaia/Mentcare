@@ -15,6 +15,15 @@ public class PersonTest {
     }
 
     @Test
+    public void personCreationWithNoParameters()
+    {
+        Person person = new Person();
+        Assert.assertNull(person.getFirstName());
+        Assert.assertNull(person.getLastName());
+        Assert.assertNull(person.getId());
+    }
+
+    @Test
     public void toStringTest()
     {
         String name = "Stefano";
