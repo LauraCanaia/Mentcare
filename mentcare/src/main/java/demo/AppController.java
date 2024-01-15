@@ -58,7 +58,6 @@ public class AppController {
         return "mentcare";
     }
 
-
     @GetMapping("/logout")
     public String logout() {
         return "redirect:/login";

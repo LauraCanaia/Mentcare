@@ -1,9 +1,6 @@
 package demo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.lang.reflect.Array;
 import java.util.*;
 
@@ -14,16 +11,17 @@ public class User {
     private Long id;
     private String username;
 
+    private String lastname;
+    private String fiscalCode;
     private String password;
 
-    private String lastname;
-
-    private String fiscalCode;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private List<Visit> visits = new ArrayList<>();
 
     public User(String username, String lastname, String fiscalCode, String password) {
         this.username = username;
+        this.lastname = lastname;
+        this.fiscalCode = fiscalCode;
         this.password = password;
         this.lastname = lastname;
         this.fiscalCode = fiscalCode;
@@ -37,6 +35,8 @@ public class User {
 
     public User() {
         this.username = "";
+        this.lastname = "";
+        this.fiscalCode = "";
         this.password = "";
         this.lastname = "";
         this.fiscalCode = "";
@@ -49,6 +49,7 @@ public class User {
     public String toString () {
         return String.format(
                 "User[username='%s', lastname='%s', code='%s' password='%s']",
+                "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
                 username, lastname, fiscalCode, password);
     }
 
