@@ -1,6 +1,7 @@
 package demo;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,8 +18,15 @@ public class UserTest {
     @Test
     public void userWithParameters()
     {
-        User userTest = new User("Laura", "Canaia", "CNALRA99H42L157X", "Lampadario540!");
-        Assert.assertEquals("Laura", userTest.getUsername());
+        String username = "Laura";
+        String lastName = "Canaia";
+        String fiscalCode = "CNALRA99H42L157X";
+        String password = "Lampadario540!";
+        User userTest = new User(username, lastName, fiscalCode, password);
+        Assert.assertEquals(username, userTest.getUsername());
+        Assert.assertEquals(lastName, userTest.getLastname());
+        Assert.assertEquals(fiscalCode, userTest.getFiscalCode());
+        Assert.assertEquals(password, userTest.getPassword());
     }
 
     @Test
@@ -34,4 +42,23 @@ public class UserTest {
                 username, lastName, fiscalCode, password);
         Assert.assertEquals(result, userTest.toString());
     }
+
+    @Test
+    public void setUsernameTest()
+    {
+        User userTest = new User();
+        Assert.assertEquals("", userTest.getUsername());
+        userTest.setUsername("randomName");
+        Assert.assertEquals("randomName", userTest.getUsername());
+    }
+
+    @Test
+    public void setPasswordTest()
+    {
+        User userTest = new User();
+        Assert.assertEquals("", userTest.getPassword());
+        userTest.setPassword("randomPasswordValue123!");
+        Assert.assertEquals("randomPasswordValue123!", userTest.getPassword());
+    }
+
 }
