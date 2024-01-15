@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +73,15 @@
     "Gradle.PersonTest.executor": "Coverage",
     "Gradle.PersonTest.personCreation.executor": "Coverage",
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
+    "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
+    "Gradle.UserTest.addVisit.executor": "Run",
+    "Gradle.UserTest.createFixedVisitTest.executor": "Run",
     "Gradle.UserTest.executor": "Coverage",
+    "Gradle.UserTest.setFiscalCodeTest.executor": "Run",
     "Gradle.UserTest.setPasswordTest.executor": "Run",
     "Gradle.UserTest.setUsernameTest.executor": "Run",
     "Gradle.UserTest.toStringTest.executor": "Run",
+    "Gradle.UserTest.userWithNoParameters.executor": "Run",
     "Gradle.UserTest.userWithParameters.executor": "Run",
     "Gradle.VisitTest.executor": "Coverage",
     "Gradle.VisitTest.testSetters.executor": "Run",
@@ -121,7 +126,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VisitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest.addAndRemoveVisitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.VisitTest&quot;" />
+            <option value="&quot;demo.UserTest.addAndRemoveVisitTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -145,7 +150,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VisitTest.testSetters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest.addVisit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,7 +163,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.VisitTest.testSetters&quot;" />
+            <option value="&quot;demo.UserTest.addVisit&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +174,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VisitTest.userSetterAndGetter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest.createFixedVisitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +187,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.VisitTest.userSetterAndGetter&quot;" />
+            <option value="&quot;demo.UserTest.createFixedVisitTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -193,7 +198,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="VisitTest.visitWithNoParameters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest.setLastNameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -206,7 +211,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.VisitTest.visitWithNoParameters&quot;" />
+            <option value="&quot;demo.UserTest.setLastNameTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,10 +225,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.UserTest" />
-        <item itemvalue="Gradle.VisitTest" />
-        <item itemvalue="Gradle.VisitTest.userSetterAndGetter" />
-        <item itemvalue="Gradle.VisitTest.visitWithNoParameters" />
-        <item itemvalue="Gradle.VisitTest.testSetters" />
+        <item itemvalue="Gradle.UserTest.setLastNameTest" />
+        <item itemvalue="Gradle.UserTest.createFixedVisitTest" />
+        <item itemvalue="Gradle.UserTest.addAndRemoveVisitTest" />
+        <item itemvalue="Gradle.UserTest.addVisit" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +247,7 @@
     <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705331022968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705329489498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreationWithNoParameters.ic" NAME="PersonTest.personCreationWithNoParameters Coverage Results" MODIFIED="1705329465894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705331119516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705334538783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
