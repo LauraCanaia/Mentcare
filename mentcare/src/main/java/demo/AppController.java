@@ -34,12 +34,14 @@ public class AppController {
     public String login(String username, String password, Model model) {
         User user = userRepository.findByUsernameAndPassword(username, password);
         //user.setVisits2();
-        for (int i=0; i<user.getVisits().size(); i++) {
-            Visit visita = user.getVisits().get(i);
-            visitRepository.save(visita);
-            System.out.println("ho salvato la visita: " + visita);
+        if (user != null) {
+            for (int i=0; i<user.getVisits().size(); i++) {
+                Visit visita = user.getVisits().get(i);
+                visitRepository.save(visita);
+                System.out.println("ho salvato la visita: " + visita);
+            }
+            System.out.println("ho trovato user: " + user.getUsername()+ " e visite: " + user.getVisits());
         }
-        System.out.println("ho trovato user: " + user.getUsername()+ " e visite: " + user.getVisits());
 
         if (user != null) {
             model.addAttribute("username", user.getUsername());
