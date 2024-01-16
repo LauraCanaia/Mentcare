@@ -58,6 +58,18 @@
     button:hover {
         background-color: #45a049;
     }
+
+    .back-button {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #333333;
+        color: #ffffff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +83,7 @@
 </header>
 
 <div class="form-container">
+  <a th:href="@{'/welcome?username=' + ${username}}" class="back-button">Torna indietro</a>
   <h2>Aggiungi Nuova Visita</h2>
   <!-- Form per aggiungere una nuova visita -->
   <form action="/saveAddedVisit" method="post">

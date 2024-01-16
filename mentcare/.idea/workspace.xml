@@ -29,17 +29,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -67,41 +57,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.PersonTest.executor": "Coverage",
-    "Gradle.PersonTest.personCreation.executor": "Coverage",
-    "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
-    "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
-    "Gradle.UserTest.addVisit.executor": "Run",
-    "Gradle.UserTest.createFixedVisitTest.executor": "Run",
-    "Gradle.UserTest.executor": "Coverage",
-    "Gradle.UserTest.setFiscalCodeTest.executor": "Run",
-    "Gradle.UserTest.setPasswordTest.executor": "Run",
-    "Gradle.UserTest.setUsernameTest.executor": "Run",
-    "Gradle.UserTest.toStringTest.executor": "Run",
-    "Gradle.UserTest.userWithNoParameters.executor": "Run",
-    "Gradle.UserTest.userWithParameters.executor": "Run",
-    "Gradle.VisitTest.executor": "Coverage",
-    "Gradle.VisitTest.testSetters.executor": "Run",
-    "Gradle.VisitTest.toStringTest.executor": "Run",
-    "Gradle.VisitTest.userSetterAndGetter.executor": "Run",
-    "Gradle.VisitTest.visitWithNoParameters.executor": "Run",
-    "Gradle.VisitTest.visitWithParameters.executor": "Run",
-    "Gradle.mentcare [bootRun].executor": "Run",
-    "Gradle.mentcare.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "developement",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Laura/Desktop/TestLab",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.PersonTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.PersonTest.personCreation.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.PersonTest.personCreationWithNoParameters.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.UserTest.addAndRemoveVisitTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.addVisit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.createFixedVisitTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.UserTest.setFiscalCodeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.setPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.setUsernameTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.userWithNoParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.userWithParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.VisitTest.testSetters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.userSetterAndGetter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.visitWithNoParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.visitWithParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mentcare [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mentcare.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developement&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Desktop/TestLab&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.UserTest">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="UserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -244,10 +242,10 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705331022968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705329489498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreationWithNoParameters.ic" NAME="PersonTest.personCreationWithNoParameters Coverage Results" MODIFIED="1705329465894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705334538783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705331022968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
