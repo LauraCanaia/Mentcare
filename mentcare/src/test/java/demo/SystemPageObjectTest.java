@@ -24,7 +24,7 @@ public class SystemPageObjectTest extends DriverSetup{
         Assert.assertTrue(driver.getCurrentUrl().equals("http://localhost:8080/login"));
 
         welcome = mentcare.SubmitCredentials(name, password, driver);
-        Assert.assertTrue(welcome != null);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
     }
 
     /*@Test
