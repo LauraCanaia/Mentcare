@@ -5,8 +5,6 @@ import org.junit.Test;
 
 public class SystemPageObjectTest extends DriverSetup{
 
-    /*
-    WAIT UNTIL ERROR IS FIXED
     @Test
     public void registerAndLogin()
     {
@@ -17,8 +15,19 @@ public class SystemPageObjectTest extends DriverSetup{
 
         driver.get("http://localhost:8080/");
 
-    }*/
-    @Test
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertNull(welcome);
+
+        RegistrationPageTest registration = mentcare.clickRegistration(driver);
+        mentcare = registration.userSignUp(name, lastName, fiscalCode, password, driver);
+        Assert.assertTrue(driver.getCurrentUrl().equals("http://localhost:8080/login"));
+
+        welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertTrue(welcome != null);
+    }
+
+    /*@Test
     public void loginAndAddVisit()
     {
         String name = "laura";
@@ -30,5 +39,5 @@ public class SystemPageObjectTest extends DriverSetup{
         WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
 
         Assert.assertTrue(true);
-    }
+    }*/
 }

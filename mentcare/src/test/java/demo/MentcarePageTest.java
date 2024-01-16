@@ -19,6 +19,9 @@ public class MentcarePageTest extends PageDriver{
     @FindBy(xpath = "//a[contains(text(),\"Don't have an account? Register here\")]")
     private WebElement register;
 
+    @FindBy(xpath = "")
+    private WebElement loginError;
+
     public MentcarePageTest(WebDriver driver) {
         super(driver);
     }
@@ -30,6 +33,16 @@ public class MentcarePageTest extends PageDriver{
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         login.click();
+        if(driver.getCurrentUrl().equals("http://localhost:8080/login"))
+            return null;
         return new WelcomePageTest(driver);
     }
+
+    public RegistrationPageTest clickRegistration(WebDriver driver)
+    {
+        register.click();
+        return new RegistrationPageTest(driver);
+    }
+
+
 }

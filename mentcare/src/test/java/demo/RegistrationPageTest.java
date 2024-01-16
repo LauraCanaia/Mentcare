@@ -27,4 +27,18 @@ public class RegistrationPageTest extends PageDriver{
     public RegistrationPageTest(WebDriver driver) {
         super(driver);
     }
+
+    public MentcarePageTest userSignUp(String name, String lastName, String fiscalCode, String password, WebDriver driver)
+    {
+        this.username.click();
+        this.username.sendKeys(name);
+        this.lastname.click();
+        this.lastname.sendKeys(lastName);
+        this.fiscalCode.click();
+        this.fiscalCode.sendKeys(fiscalCode);
+        this.password.click();
+        this.password.sendKeys(password);
+        this.register.click();
+        return new MentcarePageTest(driver);
+    }
 }

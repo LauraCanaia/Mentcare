@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/PageDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
     "Gradle.SystemPageObjectTest.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
-    "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Debug",
+    "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
     "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
     "Gradle.UserTest.addVisit.executor": "Run",
     "Gradle.UserTest.createFixedVisitTest.executor": "Run",
@@ -119,7 +115,7 @@
     "git-widget-placeholder": "developement",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Laura/Desktop/Mentcare/mentcare/src/test/resources",
+    "last_opened_file_path": "C:/Users/Laura/Downloads/selenium-test-main",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
@@ -131,7 +127,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginAndAddVisit">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest.registerAndLogin">
     <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -248,10 +244,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest" />
-        <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
         <item itemvalue="Gradle.mentcare" />
       </list>
     </recent_temporary>
