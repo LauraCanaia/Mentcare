@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" afterDir="false" />
     </list>
@@ -89,6 +87,7 @@
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
     "Gradle.SystemPageObjectTest.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
+    "Gradle.SystemPageObjectTest.loginAndLogout.executor": "Run",
     "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
     "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
     "Gradle.UserTest.addVisit.executor": "Run",
@@ -127,7 +126,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginAndAddVisit">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginAndLogout">
     <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -166,6 +165,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;demo.SystemPageObjectTest.loginAndAddVisit&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SystemPageObjectTest.loginAndLogout" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;demo.SystemPageObjectTest.loginAndLogout&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,33 +245,13 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="mentcare" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest.loginAndLogout" />
         <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.SystemPageObjectTest" />
-        <item itemvalue="Gradle.mentcare" />
       </list>
     </recent_temporary>
   </component>

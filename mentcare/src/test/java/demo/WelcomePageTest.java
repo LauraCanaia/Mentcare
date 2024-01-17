@@ -37,4 +37,10 @@ public class WelcomePageTest extends PageDriver {
         List<WebElement> rows = driver.findElements(By.xpath("//div[@class='welcome-container']//table//tbody//tr"));
         return rows.size();
     }
+
+    public MentcarePageTest logoutAction(WebDriver driver)
+    {
+        this.logout.click();
+        return new MentcarePageTest(driver);
+    }
 }

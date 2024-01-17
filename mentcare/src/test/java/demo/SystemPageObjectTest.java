@@ -52,4 +52,33 @@ public class SystemPageObjectTest extends DriverSetup{
         Integer dimAfter = welcome.findTableDimension(driver);
         Assert.assertTrue(dimBefore < dimAfter);
     }
+    @Test
+    public void loginAndLogout()
+    {
+        String name = "laura";
+        String password = "5678";
+
+        driver.get("http://localhost:8080/");
+
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+
+        mentcare = welcome.logoutAction(driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Login"));
+    }
+
+    public void deleteVisit()
+    {
+        String name = "laura";
+        String password = "5678";
+
+        driver.get("http://localhost:8080/");
+
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+
+        
+    }
 }
