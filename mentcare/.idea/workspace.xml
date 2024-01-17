@@ -85,6 +85,7 @@
     "Gradle.PersonTest.executor": "Coverage",
     "Gradle.PersonTest.personCreation.executor": "Coverage",
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
+    "Gradle.SystemPageObjectTest.deleteFirstVisit.executor": "Run",
     "Gradle.SystemPageObjectTest.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndLogout.executor": "Run",
@@ -126,8 +127,8 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginAndLogout">
-    <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest.deleteFirstVisit">
+    <configuration name="SystemPageObjectTest.deleteFirstVisit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +141,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest&quot;" />
+            <option value="&quot;demo.SystemPageObjectTest.deleteFirstVisit&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -247,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest.deleteFirstVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest.loginAndLogout" />
         <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
-        <item itemvalue="Gradle.SystemPageObjectTest" />
       </list>
     </recent_temporary>
   </component>

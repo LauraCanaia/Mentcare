@@ -43,4 +43,9 @@ public class WelcomePageTest extends PageDriver {
         this.logout.click();
         return new MentcarePageTest(driver);
     }
+
+    public void deleteVisit()
+    {
+        this.delete.click();
+    }
 }

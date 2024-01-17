@@ -67,8 +67,8 @@ public class SystemPageObjectTest extends DriverSetup{
         mentcare = welcome.logoutAction(driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Login"));
     }
-
-    public void deleteVisit()
+    @Test
+    public void deleteFirstVisit()
     {
         String name = "laura";
         String password = "5678";
@@ -78,7 +78,10 @@ public class SystemPageObjectTest extends DriverSetup{
         MentcarePageTest mentcare = new MentcarePageTest(driver);
         WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+        Integer dimBefore = welcome.findTableDimension(driver);
 
-        
+        welcome.deleteVisit();
+        Integer dimAfter = welcome.findTableDimension(driver);
+        Assert.assertTrue(dimAfter < dimBefore);
     }
 }
