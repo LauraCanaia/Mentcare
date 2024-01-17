@@ -1,10 +1,10 @@
-package demo;
+package demo.pageObjectsSetup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class EditVisitPageTest extends PageDriver{
+public class AddVisitPageTest extends PageDriver {
 
     @FindBy(xpath = "//input[@name='date']")
     private WebElement date;
@@ -18,41 +18,26 @@ public class EditVisitPageTest extends PageDriver{
     @FindBy(xpath="//button[@type='submit']")
     private WebElement submit;
 
-    @FindBy(xpath = "//button[@type='button']")
+    @FindBy(xpath = "//a[@class='back-button']")
     private WebElement goBack;
 
-    public EditVisitPageTest(WebDriver driver) {
+    public AddVisitPageTest(WebDriver driver) {
         super(driver);
     }
 
-    public void editDate(String date)
+    public WelcomePageTest compileVisitForm(WebDriver driver, String date, String time, String motivation)
     {
         this.date.click();
-        this.date.clear();
         this.date.sendKeys(date);
-    }
-
-    public void editTime(String time)
-    {
         this.time.click();
-        this.time.clear();
         this.time.sendKeys(time);
-    }
-
-    public void editMotivation(String motivation)
-    {
         this.motivation.click();
-        this.motivation.clear();
         this.motivation.sendKeys(motivation);
-    }
-
-    public WelcomePageTest submitEdited(WebDriver driver)
-    {
         this.submit.click();
         return new WelcomePageTest(driver);
     }
 
-    public WelcomePageTest goBackButton(WebDriver driver)
+    public WelcomePageTest goBackToWelcome(WebDriver driver)
     {
         this.goBack.click();
         return new WelcomePageTest(driver);

@@ -1,10 +1,12 @@
-package demo;
+package demo.pageObjectsSetup;
 
+import demo.pageObjectsSetup.MentcarePageTest;
+import demo.pageObjectsSetup.PageDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class RegistrationPageTest extends PageDriver{
+public class RegistrationPageTest extends PageDriver {
 
     @FindBy(xpath = "//input[@id='username']")
     private WebElement username;

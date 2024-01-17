@@ -6,10 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/AddVisitPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/DriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/DriverSetup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/EditVisitPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/MentcarePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/PageDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/PageDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/RegistrationPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/WelcomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.DriverSetup.executor": "Coverage",
     "Gradle.PersonTest.executor": "Coverage",
     "Gradle.PersonTest.personCreation.executor": "Coverage",
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
@@ -99,6 +104,8 @@
     "Gradle.SystemPageObjectTest.modifyFirstVisitTime.executor": "Run",
     "Gradle.SystemPageObjectTest.modifyVisitAndReturnToWelcome.executor": "Run",
     "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
+    "Gradle.Tests in 'demo'.executor": "Coverage",
+    "Gradle.Tests in 'mentcare.test'.executor": "Coverage",
     "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
     "Gradle.UserTest.addVisit.executor": "Run",
     "Gradle.UserTest.createFixedVisitTest.executor": "Run",
@@ -115,6 +122,7 @@
     "Gradle.VisitTest.userSetterAndGetter.executor": "Run",
     "Gradle.VisitTest.visitWithNoParameters.executor": "Run",
     "Gradle.VisitTest.visitWithParameters.executor": "Run",
+    "Gradle.demo.PersonTest and 3 more.executor": "Coverage",
     "Gradle.mentcare [bootRun].executor": "Run",
     "Gradle.mentcare.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -136,8 +144,8 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginRegisterLoginButtonScenario">
-    <configuration name="SystemPageObjectTest.addVisitAndReturnToWelcome" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.demo.PersonTest and 3 more">
+    <configuration name="DriverSetup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +158,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.addVisitAndReturnToWelcome&quot;" />
+            <option value="&quot;demo.DriverSetup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +169,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemPageObjectTest.loginRegisterLoginButtonScenario" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PersonTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +182,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.loginRegisterLoginButtonScenario&quot;" />
+            <option value="&quot;demo.PersonTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +193,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemPageObjectTest.modifyFirstVisitDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -198,7 +206,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.modifyFirstVisitDate&quot;" />
+            <option value="&quot;demo.SystemPageObjectTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,7 +217,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemPageObjectTest.modifyFirstVisitTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,7 +230,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.modifyFirstVisitTime&quot;" />
+            <option value="&quot;demo.UserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,7 +241,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemPageObjectTest.modifyVisitAndReturnToWelcome" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="demo.PersonTest and 3 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -245,8 +253,10 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.modifyVisitAndReturnToWelcome&quot;" />
+            <option value="--tests &quot;demo.PersonTest&quot;" />
+            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
+            <option value="--tests &quot;demo.UserTest&quot;" />
+            <option value="--tests &quot;demo.VisitTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -259,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SystemPageObjectTest.loginRegisterLoginButtonScenario" />
-        <item itemvalue="Gradle.SystemPageObjectTest.modifyVisitAndReturnToWelcome" />
-        <item itemvalue="Gradle.SystemPageObjectTest.modifyFirstVisitTime" />
-        <item itemvalue="Gradle.SystemPageObjectTest.modifyFirstVisitDate" />
-        <item itemvalue="Gradle.SystemPageObjectTest.addVisitAndReturnToWelcome" />
+        <item itemvalue="Gradle.demo.PersonTest and 3 more" />
+        <item itemvalue="Gradle.UserTest" />
+        <item itemvalue="Gradle.SystemPageObjectTest" />
+        <item itemvalue="Gradle.PersonTest" />
+        <item itemvalue="Gradle.DriverSetup" />
       </list>
     </recent_temporary>
   </component>
@@ -279,11 +289,15 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705331022968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705329489498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705482730011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$Tests_in__mentcare_test_.ic" NAME="Tests in 'mentcare.test' Coverage Results" MODIFIED="1705485805533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705485840633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705485877069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705485882854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_PersonTest_and_3_more.ic" NAME="demo.PersonTest and 3 more Coverage Results" MODIFIED="1705486030788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$DriverSetup.ic" NAME="DriverSetup Coverage Results" MODIFIED="1705485855929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreationWithNoParameters.ic" NAME="PersonTest.personCreationWithNoParameters Coverage Results" MODIFIED="1705329465894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705334538783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$Tests_in__demo_.ic" NAME="Tests in 'demo' Coverage Results" MODIFIED="1705485744664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705485946986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -1,6 +1,10 @@
-package demo;
+package demo.pageObjectsSetup;
 
 
+import demo.pageObjectsSetup.AddVisitPageTest;
+import demo.pageObjectsSetup.EditVisitPageTest;
+import demo.pageObjectsSetup.MentcarePageTest;
+import demo.pageObjectsSetup.PageDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

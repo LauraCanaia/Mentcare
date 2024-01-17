@@ -1,9 +1,10 @@
 package demo;
 
+import demo.pageObjectsSetup.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SystemPageObjectTest extends DriverSetup{
+public class SystemPageObjectTest extends DriverSetup {
 
     @Test
     public void registerAndLogin()

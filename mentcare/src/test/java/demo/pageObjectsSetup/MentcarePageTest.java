@@ -1,10 +1,10 @@
-package demo;
+package demo.pageObjectsSetup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MentcarePageTest extends PageDriver{
+public class MentcarePageTest extends PageDriver {
 
 
     @FindBy(xpath = "//input[@type='text']")
