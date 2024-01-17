@@ -25,6 +25,20 @@ public class EditVisitPageTest extends PageDriver{
         super(driver);
     }
 
+    public void editDate(String date)
+    {
+        this.date.click();
+        this.date.clear();
+        this.date.sendKeys(date);
+    }
+
+    public void editTime(String time)
+    {
+        this.time.click();
+        this.time.clear();
+        this.time.sendKeys(time);
+    }
+
     public void editMotivation(String motivation)
     {
         this.motivation.click();
@@ -35,6 +49,12 @@ public class EditVisitPageTest extends PageDriver{
     public WelcomePageTest submitEdited(WebDriver driver)
     {
         this.submit.click();
+        return new WelcomePageTest(driver);
+    }
+
+    public WelcomePageTest goBackButton(WebDriver driver)
+    {
+        this.goBack.click();
         return new WelcomePageTest(driver);
     }
 }

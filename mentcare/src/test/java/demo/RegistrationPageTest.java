@@ -41,4 +41,10 @@ public class RegistrationPageTest extends PageDriver{
         this.register.click();
         return new MentcarePageTest(driver);
     }
+
+    public MentcarePageTest returnToLogin(WebDriver driver)
+    {
+        this.login.click();
+        return new MentcarePageTest(driver);
+    }
 }
