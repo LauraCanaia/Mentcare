@@ -17,6 +17,10 @@ public class EditVisitPageTest extends PageDriver{
 
     @FindBy(xpath="//button[@type='submit']")
     private WebElement submit;
+
+    @FindBy(xpath = "//button[@type='button']")
+    private WebElement goBack;
+
     public EditVisitPageTest(WebDriver driver) {
         super(driver);
     }

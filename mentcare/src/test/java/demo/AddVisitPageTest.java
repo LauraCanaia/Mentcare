@@ -18,6 +18,9 @@ public class AddVisitPageTest extends PageDriver{
     @FindBy(xpath="//button[@type='submit']")
     private WebElement submit;
 
+    @FindBy(xpath = "//a[@class='back-button']")
+    private WebElement goBack;
+
     public AddVisitPageTest(WebDriver driver) {
         super(driver);
     }
@@ -31,6 +34,12 @@ public class AddVisitPageTest extends PageDriver{
         this.motivation.click();
         this.motivation.sendKeys(motivation);
         this.submit.click();
+        return new WelcomePageTest(driver);
+    }
+
+    public WelcomePageTest goBackToWelcome(WebDriver driver)
+    {
+        this.goBack.click();
         return new WelcomePageTest(driver);
     }
 }

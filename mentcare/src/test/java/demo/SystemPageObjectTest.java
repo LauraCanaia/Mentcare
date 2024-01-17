@@ -108,4 +108,24 @@ public class SystemPageObjectTest extends DriverSetup{
         welcome = edit.submitEdited(driver);
         Assert.assertTrue(welcome.getFirstVisitMotivationToString().equals(newMotivation));
     }
+
+    @Test
+    public void addVisitAndReturnToWelcome()
+    {
+        String name = "laura";
+        String password = "5678";
+        String newMotivation = "edited motivation";
+
+        driver.get("http://localhost:8080/");
+
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+
+        AddVisitPageTest addVisit = welcome.addVisit(driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Aggiungi Visita"));
+
+        welcome = addVisit.goBackToWelcome(driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+    }
 }
