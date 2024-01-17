@@ -33,7 +33,7 @@ public class MentcarePageTest extends PageDriver{
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         login.click();
-        if(driver.getCurrentUrl().equals("http://localhost:8080/login"))
+        if(driver.getTitle().equals("Mentcare - Login"))
             return null;
         return new WelcomePageTest(driver);
     }

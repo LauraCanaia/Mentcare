@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/AddVisitPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/MentcarePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,44 +81,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.PersonTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.PersonTest.personCreation.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.PersonTest.personCreationWithNoParameters.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.SystemPageObjectTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SystemPageObjectTest.loginAndAddVisit.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SystemPageObjectTest.registerAndLogin.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.addAndRemoveVisitTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.addVisit.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.createFixedVisitTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.UserTest.setFiscalCodeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.setPasswordTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.setUsernameTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.toStringTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.userWithNoParameters.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.UserTest.userWithParameters.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.VisitTest.executor&quot;: &quot;Coverage&quot;,
-    &quot;Gradle.VisitTest.testSetters.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.VisitTest.toStringTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.VisitTest.userSetterAndGetter.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.VisitTest.visitWithNoParameters.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.VisitTest.visitWithParameters.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mentcare [bootRun].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.mentcare.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;developement&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Downloads/selenium-test-main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.PersonTest.executor": "Coverage",
+    "Gradle.PersonTest.personCreation.executor": "Coverage",
+    "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
+    "Gradle.SystemPageObjectTest.executor": "Run",
+    "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
+    "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
+    "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
+    "Gradle.UserTest.addVisit.executor": "Run",
+    "Gradle.UserTest.createFixedVisitTest.executor": "Run",
+    "Gradle.UserTest.executor": "Coverage",
+    "Gradle.UserTest.setFiscalCodeTest.executor": "Run",
+    "Gradle.UserTest.setPasswordTest.executor": "Run",
+    "Gradle.UserTest.setUsernameTest.executor": "Run",
+    "Gradle.UserTest.toStringTest.executor": "Run",
+    "Gradle.UserTest.userWithNoParameters.executor": "Run",
+    "Gradle.UserTest.userWithParameters.executor": "Run",
+    "Gradle.VisitTest.executor": "Coverage",
+    "Gradle.VisitTest.testSetters.executor": "Run",
+    "Gradle.VisitTest.toStringTest.executor": "Run",
+    "Gradle.VisitTest.userSetterAndGetter.executor": "Run",
+    "Gradle.VisitTest.visitWithNoParameters.executor": "Run",
+    "Gradle.VisitTest.visitWithParameters.executor": "Run",
+    "Gradle.mentcare [bootRun].executor": "Run",
+    "Gradle.mentcare.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android.gradle.sync.needed": "true",
+    "git-widget-placeholder": "developement",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Laura/Downloads/selenium-test-main",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources" />
@@ -124,7 +127,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.registerAndLogin">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest.loginAndAddVisit">
     <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,9 +244,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
-        <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest" />
         <item itemvalue="Gradle.mentcare" />
       </list>

@@ -27,17 +27,29 @@ public class SystemPageObjectTest extends DriverSetup{
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
     }
 
-    /*@Test
+    @Test
     public void loginAndAddVisit()
     {
         String name = "laura";
         String password = "5678";
 
+        String date = "14/02/2024";
+        String time = "14:50";
+        String motivation = "Random test motivation";
+
         driver.get("http://localhost:8080/");
 
         MentcarePageTest mentcare = new MentcarePageTest(driver);
         WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+        Integer dimBefore = welcome.findTableDimension(driver);
 
-        Assert.assertTrue(true);
-    }*/
+        AddVisitPageTest newVisit = welcome.addVisit(driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Aggiungi Visita"));
+
+        welcome = newVisit.compileVisitForm(driver, date, time, motivation);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+        Integer dimAfter = welcome.findTableDimension(driver);
+        Assert.assertTrue(dimBefore < dimAfter);
+    }
 }

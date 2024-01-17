@@ -21,4 +21,16 @@ public class AddVisitPageTest extends PageDriver{
     public AddVisitPageTest(WebDriver driver) {
         super(driver);
     }
+
+    public WelcomePageTest compileVisitForm(WebDriver driver, String date, String time, String motivation)
+    {
+        this.date.click();
+        this.date.sendKeys(date);
+        this.time.click();
+        this.time.sendKeys(time);
+        this.motivation.click();
+        this.motivation.sendKeys(motivation);
+        this.submit.click();
+        return new WelcomePageTest(driver);
+    }
 }
