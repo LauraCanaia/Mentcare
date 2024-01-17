@@ -22,6 +22,9 @@ public class WelcomePageTest extends PageDriver {
     @FindBy(xpath = "//button[contains(text(),'Aggiungi Visita')]")
     private WebElement addVisit;
 
+    @FindBy(xpath = "//div[@class='welcome-container']//table//tbody//tr[1]//td[3]")
+    private WebElement firstVisitMotivation;
+
     public WelcomePageTest(WebDriver driver) {
         super(driver);
     }
@@ -47,5 +50,16 @@ public class WelcomePageTest extends PageDriver {
     public void deleteVisit()
     {
         this.delete.click();
+    }
+
+    public EditVisitPageTest editButton(WebDriver driver)
+    {
+        this.modify.click();
+        return new EditVisitPageTest(driver);
+    }
+
+    public String getFirstVisitMotivationToString()
+    {
+        return this.firstVisitMotivation.getText();
     }
 }

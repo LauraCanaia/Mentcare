@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/EditVisitPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/WelcomePageTest.java" afterDir="false" />
     </list>
@@ -89,6 +90,7 @@
     "Gradle.SystemPageObjectTest.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndLogout.executor": "Run",
+    "Gradle.SystemPageObjectTest.modifyFirstVisit.executor": "Run",
     "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
     "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
     "Gradle.UserTest.addVisit.executor": "Run",
@@ -127,7 +129,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SystemPageObjectTest.deleteFirstVisit">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest.modifyFirstVisitMotivation">
     <configuration name="SystemPageObjectTest.deleteFirstVisit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,30 +144,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;demo.SystemPageObjectTest.deleteFirstVisit&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SystemPageObjectTest.loginAndAddVisit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.loginAndAddVisit&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,7 +178,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SystemPageObjectTest.registerAndLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SystemPageObjectTest.modifyFirstVisit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -213,7 +191,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;demo.SystemPageObjectTest.registerAndLogin&quot;" />
+            <option value="&quot;demo.SystemPageObjectTest.modifyFirstVisit&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SystemPageObjectTest.modifyFirstVisitMotivation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;demo.SystemPageObjectTest.modifyFirstVisitMotivation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest.modifyFirstVisitMotivation" />
+        <item itemvalue="Gradle.SystemPageObjectTest.modifyFirstVisit" />
+        <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.SystemPageObjectTest.deleteFirstVisit" />
         <item itemvalue="Gradle.SystemPageObjectTest.loginAndLogout" />
-        <item itemvalue="Gradle.SystemPageObjectTest.loginAndAddVisit" />
-        <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
-        <item itemvalue="Gradle.mentcare [bootRun]" />
       </list>
     </recent_temporary>
   </component>

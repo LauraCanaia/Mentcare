@@ -20,4 +20,17 @@ public class EditVisitPageTest extends PageDriver{
     public EditVisitPageTest(WebDriver driver) {
         super(driver);
     }
+
+    public void editMotivation(String motivation)
+    {
+        this.motivation.click();
+        this.motivation.clear();
+        this.motivation.sendKeys(motivation);
+    }
+
+    public WelcomePageTest submitEdited(WebDriver driver)
+    {
+        this.submit.click();
+        return new WelcomePageTest(driver);
+    }
 }
