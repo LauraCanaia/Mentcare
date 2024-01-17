@@ -121,11 +121,13 @@ public class SystemPageObjectTest extends DriverSetup{
         MentcarePageTest mentcare = new MentcarePageTest(driver);
         WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+        Integer tableBefore = welcome.findTableDimension(driver);
 
         AddVisitPageTest addVisit = welcome.addVisit(driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Aggiungi Visita"));
 
         welcome = addVisit.goBackToWelcome(driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
+        Assert.assertTrue(tableBefore == welcome.findTableDimension(driver));
     }
 }
