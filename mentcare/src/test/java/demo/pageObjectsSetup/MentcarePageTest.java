@@ -1,10 +1,10 @@
-package demo;
+package demo.pageObjectsSetup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MentcarePageTest extends PageDriver{
+public class MentcarePageTest extends PageDriver {
 
 
     @FindBy(xpath = "//input[@type='text']")
@@ -33,7 +33,7 @@ public class MentcarePageTest extends PageDriver{
         this.username.sendKeys(username);
         this.password.sendKeys(password);
         login.click();
-        if(driver.getCurrentUrl().equals("http://localhost:8080/login"))
+        if(driver.getTitle().equals("Mentcare - Login"))
             return null;
         return new WelcomePageTest(driver);
     }
