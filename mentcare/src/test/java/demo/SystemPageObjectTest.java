@@ -9,6 +9,7 @@ public class SystemPageObjectTest extends DriverSetup {
     @Test
     public void registerAndLogin()
     {
+        String username = "JoJo";
         String name = "Giorno";
         String lastName = "Giovanna";
         String fiscalCode = "GVNGRN85D16H501U";
@@ -17,14 +18,14 @@ public class SystemPageObjectTest extends DriverSetup {
         driver.get("http://localhost:8080/");
 
         MentcarePageTest mentcare = new MentcarePageTest(driver);
-        WelcomePageTest welcome = mentcare.SubmitCredentials(name, password, driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(username, password, driver);
         Assert.assertNull(welcome);
 
         RegistrationPageTest registration = mentcare.clickRegistration(driver);
-        mentcare = registration.userSignUp(name, lastName, fiscalCode, password, driver);
-        Assert.assertTrue(driver.getCurrentUrl().equals("http://localhost:8080/login"));
+        mentcare = registration.userSignUp(username, name, lastName, fiscalCode, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Mentcare - Login"));
 
-        welcome = mentcare.SubmitCredentials(name, password, driver);
+        welcome = mentcare.SubmitCredentials(username, password, driver);
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
     }
     @Test

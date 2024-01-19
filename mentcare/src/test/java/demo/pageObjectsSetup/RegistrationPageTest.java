@@ -11,6 +11,9 @@ public class RegistrationPageTest extends PageDriver {
     @FindBy(xpath = "//input[@id='username']")
     private WebElement username;
 
+    @FindBy(xpath = "//input[@id='name']")
+    private WebElement name;
+
     @FindBy(xpath = "//input[@id='lastname']")
     private WebElement lastname;
 
@@ -30,10 +33,12 @@ public class RegistrationPageTest extends PageDriver {
         super(driver);
     }
 
-    public MentcarePageTest userSignUp(String name, String lastName, String fiscalCode, String password, WebDriver driver)
+    public MentcarePageTest userSignUp(String username, String name, String lastName, String fiscalCode, String password, WebDriver driver)
     {
         this.username.click();
-        this.username.sendKeys(name);
+        this.username.sendKeys(username);
+        this.name.click();
+        this.name.sendKeys(name);
         this.lastname.click();
         this.lastname.sendKeys(lastName);
         this.fiscalCode.click();

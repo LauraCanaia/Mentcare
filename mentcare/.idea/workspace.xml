@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/RegistrationPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/RegistrationPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +90,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.Build mentcare.executor": "Run",
     "Gradle.DriverSetup.executor": "Coverage",
     "Gradle.PersonTest.executor": "Coverage",
     "Gradle.PersonTest.personCreation.executor": "Coverage",
@@ -109,7 +112,7 @@
     "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
     "Gradle.UserTest.addVisit.executor": "Run",
     "Gradle.UserTest.createFixedVisitTest.executor": "Run",
-    "Gradle.UserTest.executor": "Coverage",
+    "Gradle.UserTest.executor": "Run",
     "Gradle.UserTest.setFiscalCodeTest.executor": "Run",
     "Gradle.UserTest.setPasswordTest.executor": "Run",
     "Gradle.UserTest.setUsernameTest.executor": "Run",
@@ -130,6 +133,7 @@
     "Gradle.demo.SystemPageObjectTest and 2 more (4).executor": "Coverage",
     "Gradle.demo.SystemPageObjectTest and 2 more (5).executor": "Coverage",
     "Gradle.demo.SystemPageObjectTest and 2 more.executor": "Run",
+    "Gradle.mentcare [:ServingWebContentApplication.main()].executor": "Run",
     "Gradle.mentcare [bootRun].executor": "Run",
     "Gradle.mentcare.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -151,7 +155,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.mentcare [bootRun]">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.ServingWebContentApplication" />
       <module name="mentcare.main" />
@@ -170,7 +174,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more (3)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,9 +186,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;demo.SystemPageObjectTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,7 +198,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more (4)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SystemPageObjectTest.registerAndLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -207,9 +210,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;demo.SystemPageObjectTest.registerAndLogin&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -220,7 +222,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more (5)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -232,9 +234,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;demo.UserTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -245,7 +246,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTest.toStringTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -257,9 +258,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
+            <option value="--tests" />
+            <option value="&quot;demo.UserTest.toStringTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -268,6 +268,26 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="mentcare [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -275,7 +295,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -292,13 +312,21 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.ServingWebContentApplication" />
+      <item itemvalue="Gradle.SystemPageObjectTest" />
+      <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
+      <item itemvalue="Gradle.UserTest" />
+      <item itemvalue="Gradle.UserTest.toStringTest" />
+      <item itemvalue="Gradle.mentcare [bootRun]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest" />
+        <item itemvalue="Gradle.SystemPageObjectTest.registerAndLogin" />
+        <item itemvalue="Gradle.UserTest.toStringTest" />
+        <item itemvalue="Gradle.UserTest" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (5)" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (4)" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (3)" />
       </list>
     </recent_temporary>
   </component>

@@ -42,8 +42,8 @@ public class UserTest {
         String password = "Lampadario540!";
         User userTest = new User(username, name, lastName, fiscalCode, password);
         String result = String.format(
-                "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
-                username, lastName, fiscalCode, password);
+                "User[username='%s', firstname='%s', lastname='%s', fiscalCode='%s' password='%s']"
+        , username, name, lastName, fiscalCode, password);
         Assert.assertEquals(result, userTest.toString());
     }
 
