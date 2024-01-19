@@ -9,19 +9,58 @@ Il progetto è stato sviluppato utilizzando come IDE Intellij IDEA Community Edi
 dipendenze Gradle versione 2.3.2 utilizzando come linguaggio di programmazione Java versione 14 per il backend, html e CSS
 per quanto riguarda il frontend.
 
+Il testing utilizza selenium e junti 4.12.
+
+****
+
+## Processo di sviluppo ##
+
+Il processo di sviluppo si è svolto prendendo spunto da alcuni metodologie che provengono dalle tecniche agile approfondite
+in classe. In particolare abbiamo adottato delle tecniche provenienti dall'xtreme programming in quanto puntavamo ad avere
+delle releases di prodotto utilizzabili in un periodo di tempo più breve rispetto, ad esempio,  ai cicli di sprint tipici 
+del metodo scrum.      
+Sempre prendendo spunto dai metodi agile, abbiamo mantenuto il linguaggio informale per discutere delle nuove features da
+implementare, il design semplice del componente e il coordinamento periodico (questo solo tramite via chat) per capire come 
+procedesse lo sviluppo in generale.        
+
+
+Lo sviluppo nello specifico lo abbiamo portato avanti procedendo assagnandoci delle task e lavorando in simultanea, 
+utilizzando come supporto GitHub per il versionamento utilizzando principalmente 3 branches :
+1) Main : su cui andavamo a pushare la versione più completa e funzionante del sistema fino a quel momento;
+2) Develop : nel quale si pushavano i rework e delle modifiche rispetto al sistema sviluppato;
+3) feature/nomeNuovaFeature : in cui si andava a sviluppare una nuova funzionalità e veniva testata prima di aggiungerla a develop.
+
+Coordinamento e aggiornamento è avvenuto quasi unicamente via Telegram,per aggiornamenti meno importanti, e Discord, per 
+eventuali problemi riscontrati e discussione su come procedere con il progetto.
+
 ****
 
 ## Requisiti ##
-Informazioni generali sul progetto -> si richiede di sviluppare un componente per il sistema
-mentcare con diversi tipi di funzionalità. \
-Il componente deve rappresentare 7 scenari
+Il componente che siamo andati a sviluppare è essenzialmente un'interfaccia per permettere l'accesso agli utenti ad un 
+sistema di prenotazione visite.       
+Il sistema permette ai pazienti di effettuare un login (o di registrarsi nel caso non lo fossero) e di visualizzare le visite
+prenotate con la possibilità di modificarle, eliminarle oppure andare a prenotare una nuova visita attraveso una schermata preposta
+che permetterà di prenotare una nuova visita andando a compilare un apposito form.      
+Ogni prenotazione permette agli utenti di specificare la data in cui si vuole prenotare la visita, l'orario in cui svolgere 
+la suddetta visita e la motivazione che spinge il paziende al volerla prenotare.
+
+Il sistema ha bisogno di :
+- un database in cui andare a salvare i dettagli dei pazienti registrati;
+- un database per andare a inserire le visite prenotate associate ad ogni utente
+
+Il sistema permentte di gestire solo due tipologie di utente :
+- Utenti registrati : che hanno completo accesso al sistema con le informazioni a loro associate;
+- Utenti non registrati : i quali potranno accedere al sistema solamente dopo essersi registrati tramite la schermata apposita.
+
+Gli utenti possono andare a compiere azioni sulle visite, ma solamente su quelle che vengono associate al loro account di sistema.
+Un utente che ha avuto accesso al sistema può anche effettuare il log out.
 
 ****
 
 ## Scenari ##
 
-Gli scenari sono stati modellati partendo dall'idea di implementare un componente per l'accesso utente al
-sistema in modo che sia in grado di prenotare visite, richiedere farmaci, etc ...
+Gli scenari sono stati modellati partendo dall'idea di implementare tutte le informazioni esplicitate nella sezione dei requisiti.    
+Partendo da questo presupposto, sono stati modellati i seguenti sette scenari : 
 
 ### 1. Login ###
 __Assunzioni iniziali :__ L'utente si è appena collegato al sito e si interfaccia con la pagina di Login.       
@@ -30,40 +69,42 @@ __Funzionamento standard :__ La schermata si presenta come un semplice form nel 
 di loggarsi inserendo il proprio nome utente, password e cliccare il pulsante di login per poter effettuare l'accesso.
 Se l'utente sa di non essere registrato, è presente anche un pulsante per permettere di registrarsi.     
 __Possibili funzionamenti errati :__ se l'utente tenta di loggarsi senza prima essersi registrato, il sistema 
-mostra un messaggio di errore all'utente chiedendo di reinserire le credenziali oppure di registrarsi al sistema.  
+mostra un messaggio di errore all'utente chiedendo di reinserire le credenziali oppure di registrarsi al sistema.
+__Altre attività :__ si presuppone che ogni utente abbia uno username unico che viene specificato in fase di registrazione
 __Cosa succede in caso l'esecuzione vada a buon fine :__ l'utente accede senza problemi nel sistema e passa ad un'altra pagina
 
 
 ### 2. Registrazione ###
 __Assunzioni iniziali :__ L'utente non possiede un account e accede alla schermata di registrazione tramite il 
 pulsante presente sulla schermata di login.   
-__Funzionamento standard :__ L'utente si registra al sistema tramite la compilazione del form inserendo : nome, cognome,
+__Funzionamento standard :__ L'utente si registra al sistema tramite la compilazione del form inserendo : username, nome, cognome,
 codice fiscale, password. Dopo aver inserito tutti i parametri l'utente deve cliccare il pulsante "registrati".   
 __Possibili funzionamenti errati :__ Ci sono diversi possibili comportamenti inattesi che possono portare il sistema in
 errore :    
 a) Se i campi non sono stati tutti compilati, l'utente riceve un messaggio di errore dedicato;    
 b) Se il codice fiscale non è valido, nella schermata compare un messaggio di errore dedicato;     
-c) Se la password non rispetta le indicazioni date, viene restituito un messaggio di errore dedicato.   
+c) Se la password non rispetta le indicazioni date, viene restituito un messaggio di errore dedicato;        
+d) Se l'utente, in fase di registrazione, inserisce uno username già presente nel database il sistema richiede di inserire un nuovo username.
 __Cosa succede in caso l'esecuzione vada a buon fine :__ l'utente viene registrato correttamente e viene reindirizzato
 alla schermata di login dove potrà accedere al sistema inserendo le credenziali appena create.
 
 ### 3. Home Page ###
 __Assunzioni iniziali :__ L'utente ha effettuato l'accesso al sistema.    
-__Fuznionamento standard :__ All'utente si presenta una pagina con il proprio nome, con a fianco ad esso 2 pulsanti : il 
+__Fuznionamento standard :__ All'utente si presenta una pagina con il proprio username, con a fianco ad esso 2 pulsanti : il 
 pulsante di logout e quello di prenotazione di una nuova visita.   
-Sotto di esso vi è una tabella (con anche 0 righe potenzialmente) con tutte le visite che sono in programma e, per ogni 
+Sotto di esso vi è una tabella con tutte le visite che sono in programma e, per ogni 
 visita nella tabella, c'è la possibilità di modificarla o di cancellarla tramite un pulsante a fianco.    
 __Possibili funzionamenti errati :__ essendo una pagina "di passaggio" per altri scenari, l'utente non può direttamente
-causare dei funzionamenti inaspettati.    
+causare dei funzionamenti inaspettati.     
+__Altri funzionamenti__ : Il sistema ha già al suo interno una visita modificabile dall'utente loggato.    
 __Cosa succede in caso l'esecuzione vada a buon fine :__ L'utente riesce ad accedere alla sezione collegata al pulsante
 o effettua il logout
 
 ### 4. Prenotazione visita ###
 __Assunzioni iniziali :__ L'utente ha effettuato l'accesso e proviene dalla pagina della home page. Inoltre supponiamo
 che tutti gli orari di visita e tutti i giorni sia possibile effettuare delle visite.   
-__Funzionamento standard :__ Per la prenotazione della visita, l'utente deve scegliere un giorno e un orario da una
-selezione preposta e successivamente mettere una motivazione (breve) del motivo per il quale si intende prenotare una
-visita.
+__Funzionamento standard :__ Per la prenotazione della visita, l'utente deve scegliere un giorno e un orario e successivamente inserire una motivazione (breve) 
+del motivo per il quale si intende prenotare una visita.
 Dopo aver compilato tutti i campi,l'utente deve premere il pulsante "prenota" e viene reinderizzato alla Home Page.   
 __Possibili funzionamenti errati :__ Se il form è vuoto viene segnalato all'utente che non può effettuare la prenotazione. 
 Se, invece, supera i caratteri disponibili, l'inserimento viene bloccato e segnalato.    
@@ -90,7 +131,7 @@ visita.
 __Funzionamento standard :__ Cliccando il pulsante "Elimina" l'utente elimina la visita dalla tabella e quindi anche 
 dal database.    
 __Possibili funzionamenti errati :__ Non sono presenti funzionamenti errrati che possono essere compiuti dall'utente in
-quanto per l'eliminazione non vi è alcuna interazione con l'utente.    
+quanto per l'eliminazione non vi è alcuna interazione con l'utente se non quella con il pulsante "Elimina".    
 __Cosa succede in caso l'esecuzione vada a buon fine :__ Nella tabella delle visite non compare più la visita 
 selezionata in precedenza.
 

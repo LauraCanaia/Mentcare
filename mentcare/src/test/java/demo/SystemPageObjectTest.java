@@ -29,6 +29,44 @@ public class SystemPageObjectTest extends DriverSetup {
         Assert.assertTrue(driver.getTitle().equals("Mentcare - Benvenuto"));
     }
     @Test
+    public void registrationWithInvalidFiscalCode()
+    {
+        String username = "JoJo";
+        String name = "Giorno";
+        String lastName = "Giovanna";
+        String invalidFiscalCode = "sagvdjshdvasd";
+        String password = "Lampadario14!";
+
+        driver.get("http://localhost:8080/");
+
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(username, password, driver);
+        Assert.assertNull(welcome);
+
+        RegistrationPageTest registration = mentcare.clickRegistration(driver);
+        mentcare = registration.userSignUp(username, name, lastName, invalidFiscalCode, password, driver);
+        Assert.assertTrue(driver.getTitle().equals("Registration - Mentcare"));
+    }
+    @Test
+    public void testWithInvalidPassword()
+    {
+        String username = "JoJo";
+        String name = "Giorno";
+        String lastName = "Giovanna";
+        String fiscalCode = "GVNGRN85D16H501U";
+        String invalidPassword = "ciao";
+
+        driver.get("http://localhost:8080/");
+
+        MentcarePageTest mentcare = new MentcarePageTest(driver);
+        WelcomePageTest welcome = mentcare.SubmitCredentials(username, invalidPassword, driver);
+        Assert.assertNull(welcome);
+
+        RegistrationPageTest registration = mentcare.clickRegistration(driver);
+        mentcare = registration.userSignUp(username, name, lastName, fiscalCode, invalidPassword, driver);
+        Assert.assertTrue(driver.getTitle().equals("Registration - Mentcare"));
+    }
+    @Test
     public void loginAndAddVisit()
     {
         String name = "laura";
