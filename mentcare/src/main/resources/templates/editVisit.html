@@ -54,6 +54,9 @@
   </style>
 </head>
 <body>
+<a th:href="@{'/welcome?username=' + ${username}}" style="text-decoration: none;">
+  <button type="button">Torna a Welcome</button>
+</a>
 <!-- Modulo di modifica visita -->
 <form action="/saveVisit" method="post">
   <!-- Campo nascosto per l'ID della visita -->

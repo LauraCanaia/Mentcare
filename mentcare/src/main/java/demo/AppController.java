@@ -34,12 +34,14 @@ public class AppController {
     public String login(String username, String password, Model model) {
         User user = userRepository.findByUsernameAndPassword(username, password);
         //user.setVisits2();
-        for (int i=0; i<user.getVisits().size(); i++) {
-            Visit visita = user.getVisits().get(i);
-            visitRepository.save(visita);
-            System.out.println("ho salvato la visita: " + visita);
+        if (user != null) {
+            for (int i=0; i<user.getVisits().size(); i++) {
+                Visit visita = user.getVisits().get(i);
+                visitRepository.save(visita);
+                System.out.println("ho salvato la visita: " + visita);
+            }
+            System.out.println("ho trovato user: " + user.getUsername()+ " e visite: " + user.getVisits());
         }
-        System.out.println("ho trovato user: " + user.getUsername()+ " e visite: " + user.getVisits());
 
         if (user != null) {
             model.addAttribute("username", user.getUsername());
@@ -70,8 +72,9 @@ public class AppController {
 
         if (optionalVisit.isPresent()) {
             Visit visit = optionalVisit.get();
-            //model.addAttribute("username", username);
             model.addAttribute("visit", visit);
+            //System.out.println("lo user della visita da modificare è: " + visit.getUser().getUsername());
+            model.addAttribute("username", visit.getUser().getUsername());
             System.out.println("/editVisit: l'id è: " + visit.getId());
             return "editVisit"; // Sostituisci con il nome della tua pagina di modifica visita
         } else {
@@ -170,6 +173,22 @@ public class AppController {
         }
         // 7. Redirect alla pagina di benvenuto
         return "welcome";
+    }
+
+    @GetMapping("/welcome")
+    public String welcome(@RequestParam String username, Model model) {
+        System.out.println("il pulsante è stato premuto, after all");
+        System.out.println("devo trovare lo user " + username);
+        User user = userRepository.findByUsername(username);
+
+        if (user != null) {
+            model.addAttribute("username", user.getUsername());
+            model.addAttribute("visits", user.getVisits());
+            return "welcome";
+        } else {
+            // Utente non trovato, gestisci di conseguenza (ad esempio, reindirizzamento a una pagina di errore)
+            return "redirect:/error";
+        }
     }
 
 
