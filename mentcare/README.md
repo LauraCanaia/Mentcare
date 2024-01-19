@@ -1,11 +1,13 @@
-<img alt="img_1.png" height="" src="img_1.png" width="50"/>WORK IN PROGRESS<img alt="img_1.png" height="" src="img_1.png" width="50"/>
-
 # MENTCARE #
 
 Laura Canaia VR489361    
 Stefano Modenese VR491230
 
 ## Informazioni generali ##
+
+Il progetto è stato sviluppato utilizzando come IDE Intellij IDEA Community Edition, come supporto per la gestione delle 
+dipendenze Gradle versione 2.3.2 utilizzando come linguaggio di programmazione Java versione 14 per il backend, html e CSS
+per quanto riguarda il frontend.
 
 ****
 
