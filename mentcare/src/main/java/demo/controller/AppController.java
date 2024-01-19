@@ -66,15 +66,11 @@ public class AppController {
     public String editVisit(@PathVariable Long id,  Model model) {
         Optional<Visit> optionalVisit = visitRepository.findById(id);
 
-        if (optionalVisit.isPresent()) {
-            Visit visit = optionalVisit.get();
-            model.addAttribute("visit", visit);
-            model.addAttribute("username", visit.getUser().getUsername());
-            System.out.println("/editVisit: l'id è: " + visit.getId());
-            return "editVisit"; // Sostituisci con il nome della tua pagina di modifica visita
-        } else {
-            return "visitNotFound"; // Sostituisci con il nome della tua pagina di visita non trovata
-        }
+        Visit visit = optionalVisit.get();
+        model.addAttribute("visit", visit);
+        model.addAttribute("username", visit.getUser().getUsername());
+        System.out.println("/editVisit: l'id è: " + visit.getId());
+        return "editVisit"; // Sostituisci con il nome della tua pagina di modifica visita
     }
 
     @PostMapping("/saveVisit")
@@ -87,10 +83,6 @@ public class AppController {
             visit.setTime(time);
             visit.setMotivation(motivation);
 
-            // Salva la visita aggiornata nel repository delle visite solo se necessario
-            // visitRepository.save(visit);
-
-            // Aggiorna la visita nelle visite dell'utente
             User user = visit.getUser();
             List<Visit> userVisits = user.getVisits();
             int index = userVisits.indexOf(visit);
@@ -121,22 +113,17 @@ public class AppController {
     public String saveAddedVisit(@RequestParam String username, @RequestParam String date,
                                  @RequestParam String time, @RequestParam String motivation,
                                  Model model) {
-        // 1. Trova l'utente dal repository utilizzando l'username
         User user = userRepository.findByUsername(username);
 
-        // 2. Crea una nuova visita con i dati forniti
         Visit visita = new Visit();
         visita.setDate(date);
         visita.setTime(time);
         visita.setMotivation(motivation);
 
-        // 3. Salva la nuova visita nel repository delle visite
         visitRepository.save(visita);
 
-        // 4. Aggiungi la visita all'utente corrente
         user.addVisit(visita);
 
-        // 5. Salva l'utente aggiornato nel repository degli utenti
         userRepository.save(user);
 
         model.addAttribute("visits", user.getVisits());
@@ -147,26 +134,17 @@ public class AppController {
 
     @GetMapping("/deleteVisit/{visitId}")
     public String deleteVisit(@PathVariable Long visitId, Model model) {
-        // 1. Trova la visita dal repository delle visite
         Visit visitToDelete = visitRepository.findById(visitId).orElse(null);
 
-        // 2. Controlla se la visita esiste
         if (visitToDelete != null) {
-            // 3. Trova l'utente dal repository utilizzando l'username
             User user = userRepository.findByUsername(visitToDelete.getUser().getUsername());
 
-            // 4. Rimuovi la visita dalle visite dell'utente
-            user.removeVisit(visitToDelete);  // Assumi che la classe User abbia un metodo removeVisit(Visit visit)
-
-            // 5. Salva l'utente aggiornato nel repository degli utenti
+            user.removeVisit(visitToDelete);
             userRepository.save(user);
-
-            // 6. Elimina la visita dal repository delle visite
             visitRepository.delete(visitToDelete);
             model.addAttribute("visits", user.getVisits());
             model.addAttribute("username", user.getUsername());
         }
-        // 7. Redirect alla pagina di benvenuto
         return "welcome";
     }
 
@@ -181,7 +159,6 @@ public class AppController {
             model.addAttribute("visits", user.getVisits());
             return "welcome";
         } else {
-            // Utente non trovato, gestisci di conseguenza (ad esempio, reindirizzamento a una pagina di errore)
             return "redirect:/error";
         }
     }
