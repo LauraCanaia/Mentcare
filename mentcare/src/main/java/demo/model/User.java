@@ -9,7 +9,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String username;
-
+    private String name;
     private String lastname;
     private String fiscalCode;
     private String password;
@@ -17,9 +17,10 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private List<Visit> visits = new ArrayList<>();
 
-    public User(String username, String lastname, String fiscalCode, String password) {
+    public User(String username, String name, String lastname, String fiscalCode, String password) {
         this.username = username;
         this.password = password;
+        this.name = name;
         this.lastname = lastname;
         this.fiscalCode = fiscalCode;
         // Aggiungi una visita con valori fissi
@@ -33,6 +34,7 @@ public class User {
     public User() {
         this.username = "";
         this.password = "";
+        this.name = "";
         this.lastname = "";
         this.fiscalCode = "";
         this.visits = new ArrayList<>();
@@ -43,8 +45,8 @@ public class User {
     @Override
     public String toString () {
         return String.format(
-                "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
-                username, lastname, fiscalCode, password);
+                "User[username='%s', firstname='%s', lastname='%s', fiscalCode='%s' password='%s']",
+                username, name, lastname, fiscalCode, password);
     }
 
     public String getUsername () {
@@ -54,6 +56,8 @@ public class User {
     public String getPassword () {
         return this.password;
     }
+
+    public String getName () { return this.name; }
 
     public String getLastname () { return this.lastname; }
 
@@ -68,6 +72,8 @@ public class User {
     public void setPassword (String password) {
         this.password = password;
     }
+
+    public void setName (String name) { this.name = name; }
 
     public void setLastname (String lastname) { this.lastname = lastname; }
 

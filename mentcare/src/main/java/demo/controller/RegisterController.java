@@ -21,9 +21,9 @@ public class RegisterController {
         return "register";
     }
     @PostMapping("/register")
-    public String register(String username, String lastname, String fiscalcode, String password, Model model) {
+    public String register(String username, String name, String lastname, String fiscalcode, String password, Model model) {
 
-        System.out.println(username + " " + lastname + " " + fiscalcode + " " + password);
+        System.out.println(username + " " + name + " " + lastname + " " + fiscalcode + " " + password);
 
         if (!isValidFiscalCode(fiscalcode)) {
             System.out.println("il codice non è valido");
@@ -37,10 +37,10 @@ public class RegisterController {
             return "register";
         }
 
-        System.out.println(username + " " + lastname + " " + fiscalcode + " " + password);
+        System.out.println(username + " " + name + " " + lastname + " " + fiscalcode + " " + password);
 
         // Logica per la registrazione dell'utente (può includere il salvataggio in un database, ad esempio)
-        User newUser = new User(username, lastname, fiscalcode, password);
+        User newUser = new User(username, name, lastname, fiscalcode, password);
         userRepository.save(newUser);
         // Dopo la registrazione, reindirizza l'utente alla pagina di login
         return "redirect:/login";
