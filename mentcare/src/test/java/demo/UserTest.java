@@ -20,10 +20,11 @@ public class UserTest {
     public void userWithParameters()
     {
         String username = "Laura";
+        String name = "Laura";
         String lastName = "Canaia";
         String fiscalCode = "CNALRA99H42L157X";
         String password = "Lampadario540!";
-        User userTest = new User(username, lastName, fiscalCode, password);
+        User userTest = new User(username, name, lastName, fiscalCode, password);
         Assert.assertEquals(username, userTest.getUsername());
         Assert.assertEquals(lastName, userTest.getLastname());
         Assert.assertEquals(fiscalCode, userTest.getFiscalCode());
@@ -35,10 +36,11 @@ public class UserTest {
     public void toStringTest()
     {
         String username = "Laura";
+        String name = "Laura";
         String lastName = "Canaia";
         String fiscalCode = "CNALRA99H42L157X";
         String password = "Lampadario540!";
-        User userTest = new User(username, lastName, fiscalCode, password);
+        User userTest = new User(username, name, lastName, fiscalCode, password);
         String result = String.format(
                 "User[username='%s', lastname='%s', fiscalCode='%s' password='%s']",
                 username, lastName, fiscalCode, password);

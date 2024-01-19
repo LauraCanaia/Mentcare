@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/VisitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/VisitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,28 +35,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="mentcare" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -78,64 +63,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Gradle.DriverSetup.executor": "Coverage",
-    "Gradle.PersonTest.executor": "Coverage",
-    "Gradle.PersonTest.personCreation.executor": "Coverage",
-    "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
-    "Gradle.SystemPageObjectTest.addVisitAndReturnToWelcome.executor": "Run",
-    "Gradle.SystemPageObjectTest.deleteFirstVisit.executor": "Run",
-    "Gradle.SystemPageObjectTest.executor": "Coverage",
-    "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
-    "Gradle.SystemPageObjectTest.loginAndLogout.executor": "Run",
-    "Gradle.SystemPageObjectTest.loginRegisterLoginButtonScenario.executor": "Run",
-    "Gradle.SystemPageObjectTest.modifyFirstVisit.executor": "Run",
-    "Gradle.SystemPageObjectTest.modifyFirstVisitDate.executor": "Run",
-    "Gradle.SystemPageObjectTest.modifyFirstVisitMotivation.executor": "Run",
-    "Gradle.SystemPageObjectTest.modifyFirstVisitTime.executor": "Run",
-    "Gradle.SystemPageObjectTest.modifyVisitAndReturnToWelcome.executor": "Run",
-    "Gradle.SystemPageObjectTest.registerAndLogin.executor": "Run",
-    "Gradle.Tests in 'demo'.executor": "Coverage",
-    "Gradle.Tests in 'mentcare.test'.executor": "Coverage",
-    "Gradle.UserTest.addAndRemoveVisitTest.executor": "Run",
-    "Gradle.UserTest.addVisit.executor": "Run",
-    "Gradle.UserTest.createFixedVisitTest.executor": "Run",
-    "Gradle.UserTest.executor": "Coverage",
-    "Gradle.UserTest.setFiscalCodeTest.executor": "Run",
-    "Gradle.UserTest.setPasswordTest.executor": "Run",
-    "Gradle.UserTest.setUsernameTest.executor": "Run",
-    "Gradle.UserTest.toStringTest.executor": "Run",
-    "Gradle.UserTest.userWithNoParameters.executor": "Run",
-    "Gradle.UserTest.userWithParameters.executor": "Run",
-    "Gradle.VisitTest.executor": "Coverage",
-    "Gradle.VisitTest.testSetters.executor": "Run",
-    "Gradle.VisitTest.toStringTest.executor": "Run",
-    "Gradle.VisitTest.userSetterAndGetter.executor": "Run",
-    "Gradle.VisitTest.visitWithNoParameters.executor": "Run",
-    "Gradle.VisitTest.visitWithParameters.executor": "Run",
-    "Gradle.demo.PersonTest and 3 more (1).executor": "Coverage",
-    "Gradle.demo.PersonTest and 3 more.executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more (1).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more (2).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more (3).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more (4).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more (5).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more.executor": "Run",
-    "Gradle.mentcare [bootRun].executor": "Run",
-    "Gradle.mentcare.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android.gradle.sync.needed": "true",
-    "git-widget-placeholder": "developement",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Laura/Downloads/selenium-test-main",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.DriverSetup.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.PersonTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.PersonTest.personCreation.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.PersonTest.personCreationWithNoParameters.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.SystemPageObjectTest.addVisitAndReturnToWelcome.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.deleteFirstVisit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.SystemPageObjectTest.loginAndAddVisit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.loginAndLogout.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.loginRegisterLoginButtonScenario.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.modifyFirstVisit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.modifyFirstVisitDate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.modifyFirstVisitMotivation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.modifyFirstVisitTime.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.modifyVisitAndReturnToWelcome.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SystemPageObjectTest.registerAndLogin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'demo'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.Tests in 'mentcare.test'.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.UserTest.addAndRemoveVisitTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.addVisit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.createFixedVisitTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.UserTest.setFiscalCodeTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.setPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.setUsernameTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.userWithNoParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UserTest.userWithParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.VisitTest.testSetters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.userSetterAndGetter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.visitWithNoParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.VisitTest.visitWithParameters.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.demo.PersonTest and 3 more (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.PersonTest and 3 more.executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more (2).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more (3).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more (4).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more (5).executor&quot;: &quot;Coverage&quot;,
+    &quot;Gradle.demo.SystemPageObjectTest and 2 more.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mentcare [bootRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.mentcare.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developement&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laura/Downloads/selenium-test-main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources" />
@@ -144,7 +129,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.demo.SystemPageObjectTest and 2 more">
+  <component name="RunManager" selected="Gradle.mentcare [bootRun]">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.ServingWebContentApplication" />
       <module name="mentcare.main" />
@@ -162,31 +147,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="demo.SystemPageObjectTest and 2 more (3)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -288,13 +248,35 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="mentcare [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (5)" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (4)" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (3)" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -307,25 +289,38 @@
       <option name="presentableId" value="Default" />
       <updated>1705084695957</updated>
     </task>
+    <task id="LOCAL-00001" summary="Modified registration form and added user first name in registration process">
+      <option name="closed" value="true" />
+      <created>1705661778986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705661778986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modified registration form and added user first name in registration process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified registration form and added user first name in registration process" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mentcare$Tests_in__mentcare_test_.ic" NAME="Tests in 'mentcare.test' Coverage Results" MODIFIED="1705485805533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__3_.ic" NAME="demo.SystemPageObjectTest and 2 more (3) Coverage Results" MODIFIED="1705659573715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__1_.ic" NAME="demo.SystemPageObjectTest and 2 more (1) Coverage Results" MODIFIED="1705659007790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705485840633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705485877069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705485882854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__4_.ic" NAME="demo.SystemPageObjectTest and 2 more (4) Coverage Results" MODIFIED="1705659589052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__2_.ic" NAME="demo.SystemPageObjectTest and 2 more (2) Coverage Results" MODIFIED="1705659548158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more.ic" NAME="demo.SystemPageObjectTest and 2 more Coverage Results" MODIFIED="1705658900527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$demo_PersonTest_and_3_more__1_.ic" NAME="demo.PersonTest and 3 more (1) Coverage Results" MODIFIED="1705658500237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705329489498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_PersonTest_and_3_more.ic" NAME="demo.PersonTest and 3 more Coverage Results" MODIFIED="1705486030788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__2_.ic" NAME="demo.SystemPageObjectTest and 2 more (2) Coverage Results" MODIFIED="1705659548158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__5_.ic" NAME="demo.SystemPageObjectTest and 2 more (5) Coverage Results" MODIFIED="1705659729787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$VisitTest.ic" NAME="VisitTest Coverage Results" MODIFIED="1705331022968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$DriverSetup.ic" NAME="DriverSetup Coverage Results" MODIFIED="1705485855929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreationWithNoParameters.ic" NAME="PersonTest.personCreationWithNoParameters Coverage Results" MODIFIED="1705329465894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$Tests_in__demo_.ic" NAME="Tests in 'demo' Coverage Results" MODIFIED="1705485744664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705485946986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreation.ic" NAME="PersonTest.personCreation Coverage Results" MODIFIED="1705326909285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__1_.ic" NAME="demo.SystemPageObjectTest and 2 more (1) Coverage Results" MODIFIED="1705659007790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705485882854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$PersonTest_personCreationWithNoParameters.ic" NAME="PersonTest.personCreationWithNoParameters Coverage Results" MODIFIED="1705329465894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more.ic" NAME="demo.SystemPageObjectTest and 2 more Coverage Results" MODIFIED="1705658900527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__4_.ic" NAME="demo.SystemPageObjectTest and 2 more (4) Coverage Results" MODIFIED="1705659589052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$UserTest.ic" NAME="UserTest Coverage Results" MODIFIED="1705334538783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__3_.ic" NAME="demo.SystemPageObjectTest and 2 more (3) Coverage Results" MODIFIED="1705659573715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$Tests_in__mentcare_test_.ic" NAME="Tests in 'mentcare.test' Coverage Results" MODIFIED="1705485805533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$demo_PersonTest_and_3_more__1_.ic" NAME="demo.PersonTest and 3 more (1) Coverage Results" MODIFIED="1705658500237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
