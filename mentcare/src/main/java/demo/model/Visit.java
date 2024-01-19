@@ -1,9 +1,8 @@
-package demo;
+package demo.model;
+
+import demo.model.User;
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import javax.persistence.*;
 
 @Entity

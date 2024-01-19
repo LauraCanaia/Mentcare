@@ -1,7 +1,6 @@
-package demo;
-import java.util.List;
+package demo.repository;
 
-import demo.User;
+import demo.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

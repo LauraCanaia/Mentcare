@@ -1,7 +1,6 @@
-package demo;
+package demo.model;
 
 import javax.persistence.*;
-import java.lang.reflect.Array;
 import java.util.*;
 
 @Entity

@@ -1,5 +1,7 @@
 package demo;
 
+import demo.model.User;
+import demo.model.Visit;
 import org.junit.Assert;
 import org.junit.Test;
 
