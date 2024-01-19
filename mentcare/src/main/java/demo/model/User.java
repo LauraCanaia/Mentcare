@@ -1,5 +1,7 @@
 package demo.model;
 
+import demo.repository.VisitRepository;
+
 import javax.persistence.*;
 import java.util.*;
 

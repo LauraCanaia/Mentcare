@@ -2,6 +2,7 @@ package demo.controller;
 
 import demo.model.User;
 import demo.repository.UserRepository;
+import demo.repository.VisitRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -24,6 +25,13 @@ public class RegisterController {
     public String register(String username, String name, String lastname, String fiscalcode, String password, Model model) {
 
         System.out.println(username + " " + name + " " + lastname + " " + fiscalcode + " " + password);
+
+        // Verifica se l'username è già presente nel repository
+        if (userRepository.existsByUsername(username)) {
+            System.out.println("Username già in uso");
+            model.addAttribute("errorUsername", "Username già in uso");
+            return "register";
+        }
 
         if (!isValidFiscalCode(fiscalcode)) {
             System.out.println("il codice non è valido");

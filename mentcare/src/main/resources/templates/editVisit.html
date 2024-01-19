@@ -51,6 +51,13 @@
     button:hover {
         background-color: #45a049;
     }
+
+    .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: center;
+}
+
   </style>
 </head>
 <body>
@@ -74,6 +81,15 @@
 
   <button type="submit">Salva Modifiche</button>
 </form>
+<div th:if="${errorDate}" class="error-message">
+  <p th:text="${errorDate}"></p>
+</div>
+<div th:if="${errorTime}" class="error-message">
+  <p th:text="${errorDate}"></p>
+</div>
+<div th:if="${errorLength}" class="error-message">
+  <p th:text="${errorLength}"></p>
+</div>
 
 <!-- Altri contenuti, se necessario -->
 </body>

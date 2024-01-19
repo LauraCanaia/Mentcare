@@ -4,6 +4,9 @@ import demo.model.User;
 import demo.repository.UserRepository;
 import demo.model.Visit;
 import demo.repository.VisitRepository;
+import demo.utils.DateValidator;
+import demo.utils.MotivationValidator;
+import demo.utils.TimeValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -80,9 +83,36 @@ public class AppController {
         if (optionalVisit.isPresent()) {
             Visit visit = optionalVisit.get();
             visit.setDate(date);
-            visit.setTime(time);
-            visit.setMotivation(motivation);
-
+            if (DateValidator.isValidDateFormat(date)) {
+                visit.setDate(date);
+            }
+            else {
+                System.out.println("la data non è corretta");
+                model.addAttribute("errorDate", "Formato data non valido");
+                model.addAttribute("visit", visit);
+                model.addAttribute("username", visit.getUser().getUsername());
+                return "editVisit";
+            }
+            if (TimeValidator.isValidTimeFormat(time)) {
+                visit.setTime(time);
+            }
+            else {
+                System.out.println("l'orario non è corretto");
+                model.addAttribute("errorTime", "Formato di orario non valido");
+                model.addAttribute("visit", visit);
+                model.addAttribute("username", visit.getUser().getUsername());
+                return "editVisit";
+            }
+            if (MotivationValidator.isWithinMaxLength(motivation, 90)) {
+                visit.setMotivation(motivation);
+            }
+            else {
+                System.out.println("la motivazione è troppo lunga");
+                model.addAttribute("errorLength", "Motivazione troppo lunga");
+                model.addAttribute("visit", visit);
+                model.addAttribute("username", visit.getUser().getUsername());
+                return "editVisit";
+            }
             User user = visit.getUser();
             List<Visit> userVisits = user.getVisits();
             int index = userVisits.indexOf(visit);
@@ -116,14 +146,36 @@ public class AppController {
         User user = userRepository.findByUsername(username);
 
         Visit visita = new Visit();
-        visita.setDate(date);
-        visita.setTime(time);
-        visita.setMotivation(motivation);
+        if (DateValidator.isValidDateFormat(date)) {
+            visita.setDate(date);
+        }
+        else {
+            model.addAttribute("visits", user.getVisits());
+            model.addAttribute("username", user.getUsername());
+            model.addAttribute("errorDate", "Formato data non valido");
+            return "addVisit";
+        }
+        if (TimeValidator.isValidTimeFormat(time)) {
+            visita.setTime(time);
+        }
+        else {
+            model.addAttribute("visits", user.getVisits());
+            model.addAttribute("username", user.getUsername());
+            model.addAttribute("errorTime", "Formato orario non valido");
+            return "addVisit";
+        }
+        if (MotivationValidator.isWithinMaxLength(motivation, 90)) {
+            visita.setMotivation(motivation);
+        }
+        else {
+            model.addAttribute("visits", user.getVisits());
+            model.addAttribute("username", user.getUsername());
+            model.addAttribute("errorLength", "Motivazione troppo lunga");
+            return "addVisit";
+        }
 
         visitRepository.save(visita);
-
         user.addVisit(visita);
-
         userRepository.save(user);
 
         model.addAttribute("visits", user.getVisits());

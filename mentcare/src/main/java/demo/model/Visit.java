@@ -21,6 +21,7 @@ public class Visit implements Serializable {
         this.date = date;
         this.time = time;
         this.motivation = motivation;
+        System.out.println("ho creato una visita");
     }
 
     public Visit () {
@@ -34,6 +35,7 @@ public class Visit implements Serializable {
 
         // Inizializza la motivazione con un testo di prova
         this.motivation = "visita di prova";
+        System.out.println("ho creato una visita standard");
     }
 
     /*@Override

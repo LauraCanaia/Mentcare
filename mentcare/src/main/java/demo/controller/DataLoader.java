@@ -2,6 +2,7 @@ package demo.controller;
 
 import demo.model.User;
 import demo.repository.UserRepository;
+import demo.repository.VisitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
