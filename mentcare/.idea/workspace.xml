@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/PersonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/UserDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/Visit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/model/Visit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/VisitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/repository/VisitRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/input.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/read.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/PersonTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/VisitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/VisitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/controller/AppController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +122,7 @@
     "Gradle.demo.SystemPageObjectTest and 2 more (3).executor": "Coverage",
     "Gradle.demo.SystemPageObjectTest and 2 more (4).executor": "Coverage",
     "Gradle.demo.SystemPageObjectTest and 2 more (5).executor": "Coverage",
-    "Gradle.demo.SystemPageObjectTest and 2 more.executor": "Coverage",
+    "Gradle.demo.SystemPageObjectTest and 2 more.executor": "Run",
     "Gradle.mentcare [bootRun].executor": "Run",
     "Gradle.mentcare.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -160,7 +144,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ServingWebContentApplication">
+  <component name="RunManager" selected="Gradle.demo.SystemPageObjectTest and 2 more">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.ServingWebContentApplication" />
       <module name="mentcare.main" />
@@ -178,31 +162,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="demo.SystemPageObjectTest and 2 more (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="demo.SystemPageObjectTest and 2 more (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -304,13 +263,38 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="demo.SystemPageObjectTest and 2 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
+            <option value="--tests &quot;demo.UserTest&quot;" />
+            <option value="--tests &quot;demo.VisitTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (5)" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (4)" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (3)" />
         <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (2)" />
-        <item itemvalue="Gradle.demo.SystemPageObjectTest and 2 more (1)" />
       </list>
     </recent_temporary>
   </component>
