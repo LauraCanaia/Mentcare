@@ -168,10 +168,15 @@ sul testare il comportamento su ciascun metodo facente parte di ciascuna delle c
 Per le classi model, [user](src/main/java/demo/model/User.java) e [visit](src/main/java/demo/model/Visit.java),
 si è deciso di scrivere un test che testasse sia i metodi getter e setter, che i costruttori, e sia anche la logica interna.
 
-Per la scrittura degli unit test ci siamo assicurati di raggiungere una coverage il più alto possibile per verificare che
+Per la scrittura degli unit test di model ci siamo assicurati di raggiungere una coverage il più alto possibile per verificare che
 ogni metodo venisse testato almeno una volta.
 La coverage raggiunta da questa tipologia di test è stata verificata tramite il tool integrato di Intellij e la coverage dei metodi 
 raggiunta è del 100% :
 <img alt="model coverage" src="images/modelCoverage.png"/>
 
+Anche per quanto riguarda le classi di utils([DateValidator](src/main/java/demo/utils/DateValidator.java), 
+[MotivatorValidator](src/main/java/demo/utils/MotivationValidator.java) e [TimeValidator](src/main/java/demo/utils/TimeValidator.java))
+ci siamo preoccupati di raggiungere il 100% della coverage. Ma essendo classi di supporto con delle funzioni di check sono 
+stati scritti essenzialmente 2 test per classe :
+<img alt="utils coverage" src="images/utilsCoverage.png"/>
 
