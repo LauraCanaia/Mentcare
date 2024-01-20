@@ -165,11 +165,13 @@ Il refactoring è stato compiuto in contemporanea allo svilupp.
 ### Unit test ###
 Gli unit test, come scritto in precedenza, si sono concentrati sul package model e sul package utils, e in particolare 
 sul testare il comportamento su ciascun metodo facente parte di ciascuna delle classi.        
-Per le classi model, [user](mentcare/src/main/java/demo/model/User.java) e [visit](mentcare/src/main/java/demo/model/Visit.java),
+Per le classi model, [user]("mentcare/src/main/java/demo/model/User.java") e [visit]("mentcare/src/main/java/demo/model/Visit.java"),
 si è deciso di scrivere un test che testasse sia i metodi getter e setter, che i costruttori, e sia anche la logica interna.
 
 Per la scrittura degli unit test ci siamo assicurati di raggiungere una coverage il più alto possibile per verificare che
 ogni metodo venisse testato almeno una volta.
 La coverage raggiunta da questa tipologia di test è stata verificata tramite il tool integrato di Intellij e la coverage dei metodi 
 raggiunta è del 100% :
-![model coverage](C:\Users\Laura\Desktop\Mentcare\mentcare\modelCoverage.png)
+![model coverage]("mentcare/images/modelCoverage.png")
+
+
