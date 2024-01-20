@@ -31,11 +31,11 @@ public class SystemPageObjectTest extends DriverSetup {
     @Test
     public void registrationWithInvalidFiscalCode()
     {
-        String username = "JoJo";
-        String name = "Giorno";
-        String lastName = "Giovanna";
+        String username = "Leo";
+        String name = "Leone";
+        String lastName = "Abbacchio";
         String invalidFiscalCode = "sagvdjshdvasd";
-        String password = "Lampadario14!";
+        String password = "JojoRegistration!";
 
         driver.get("http://localhost:8080/");
 
@@ -169,7 +169,7 @@ public class SystemPageObjectTest extends DriverSetup {
     {
         String name = "laura";
         String password = "5678";
-        String newTime = "9:35";
+        String newTime = "09:35";
 
         driver.get("http://localhost:8080/");
 
@@ -256,5 +256,4 @@ public class SystemPageObjectTest extends DriverSetup {
         Assert.assertTrue(welcome.getFirstVisitTimeToString().equals(time));
         Assert.assertTrue(welcome.getFirstVisitMotivationToString().equals(motivation));
     }
-
 }
