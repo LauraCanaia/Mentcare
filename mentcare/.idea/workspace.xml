@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/DateValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/MotivationValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/TimeValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/geckodriver_linux64/geckodriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/geckodriver_mac64/geckodriver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/DriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/pageObjectsSetup/DriverSetup.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,10 +161,12 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_linux64" />
+      <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_mac64" />
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.demo.DateValidatorTest and 5 more (1)">
+  <component name="RunManager" selected="Gradle.demo.DateValidatorTest and 5 more (2)">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.ServingWebContentApplication" />
       <module name="mentcare.main" />
@@ -183,30 +184,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="DateValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;demo.DateValidatorTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="TimeValidatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -253,6 +230,34 @@
       <method v="2" />
     </configuration>
     <configuration name="demo.DateValidatorTest and 5 more (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests &quot;demo.DateValidatorTest&quot;" />
+            <option value="--tests &quot;demo.MotivationValidatorTest&quot;" />
+            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
+            <option value="--tests &quot;demo.TimeValidatorTest&quot;" />
+            <option value="--tests &quot;demo.UserTest&quot;" />
+            <option value="--tests &quot;demo.VisitTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="demo.DateValidatorTest and 5 more (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -332,19 +337,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ServingWebContentApplication" />
-      <item itemvalue="Gradle.DateValidatorTest" />
       <item itemvalue="Gradle.TimeValidatorTest" />
       <item itemvalue="Gradle.demo.DateValidatorTest and 5 more" />
       <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (1)" />
+      <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (2)" />
       <item itemvalue="Gradle.mentcare [bootRun]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (2)" />
         <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (1)" />
         <item itemvalue="Gradle.demo.DateValidatorTest and 5 more" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.TimeValidatorTest" />
-        <item itemvalue="Gradle.DateValidatorTest" />
       </list>
     </recent_temporary>
   </component>

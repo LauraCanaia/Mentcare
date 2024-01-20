@@ -25,6 +25,16 @@ public class DriverSetup {
             System.setProperty("webdriver.gecko.driver",
                     Paths.get("src/test/resources/geckodriver_win64/geckodriver.exe").toString());
         }
+        else if(SystemUtils.IS_OS_MAC)
+        {
+            System.setProperty("webdriver.gecko.driver",
+                    Paths.get("src/test/resources/geckodriver_mac64/geckodriver").toString());
+        }
+        else if(SystemUtils.IS_OS_LINUX)
+        {
+            System.setProperty("webdriver.gecko.driver",
+                    Paths.get("src/test/resources/geckodriver_linux64/geckodriver").toString());
+        }
         if (driver == null)
             driver = new FirefoxDriver(firefoxOptions);
     }
