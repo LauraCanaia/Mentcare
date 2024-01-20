@@ -52,8 +52,17 @@ public class UserTest {
     {
         User userTest = new User();
         Assert.assertEquals("", userTest.getUsername());
-        userTest.setUsername("randomName");
-        Assert.assertEquals("randomName", userTest.getUsername());
+        userTest.setUsername("randomUserame");
+        Assert.assertEquals("randomUserame", userTest.getUsername());
+    }
+
+    @Test
+    public void setNameTest()
+    {
+        User userTest = new User();
+        Assert.assertEquals("",userTest.getName());
+        userTest.setName("Gigi");
+        Assert.assertEquals("Gigi", userTest.getName());
     }
 
     @Test

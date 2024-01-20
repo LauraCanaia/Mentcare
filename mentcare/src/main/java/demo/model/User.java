@@ -25,8 +25,6 @@ public class User {
         this.name = name;
         this.lastname = lastname;
         this.fiscalCode = fiscalCode;
-        // Aggiungi una visita con valori fissi
-        //Visit fixedVisit = createFixedVisit();
         Visit fixedVisit = new Visit();
         visits.add(fixedVisit);
         fixedVisit.setUser(this);
@@ -95,13 +93,5 @@ public class User {
             }
         }
         visits.remove(index);
-    }
-
-    private Visit createFixedVisit() {
-        Visit visit = new Visit();
-        visit.setDate("01/01/2024");
-        visit.setTime("12:30");
-        visit.setMotivation("Visita di prova");
-        return visit;
     }
 }
