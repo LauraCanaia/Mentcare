@@ -180,3 +180,40 @@ ci siamo preoccupati di raggiungere il 100% della coverage. Ma essendo classi di
 stati scritti essenzialmente 2 test per classe :
 <img alt="utils coverage" src="images/utilsCoverage.png"/>
 
+### End to End Test ###
+I test di questa tipologia sono stati sviluppati seguendo la metodologia page objects illustrata durante il corso, in modo
+che il file [SystemPageObjectsTest](src/test/java/demo/SystemPageObjectTest.java) risultasse più leggibile, ordinato e mantenibile.
+La cartella [PageObjectsSetup](src/test/java/demo/pageObjectsSetup) contiente, infatti, tutti i file che contegnono le azioni
+principali che si possono svolgere nella pagina html a loro associata.       
+I test e2e che sono stati svolti verrano brevemente spiegati qui di seguito raggruppandoli per macro categorie :
+
+#### 1. Login e Registrazione #####
+
+- registerAndLogin() : questo test tenta di effettuare il login con un utente non ancora registrato. Non riuscendoci 
+registra l'utente e successivamente riesce ad effettuarlo;
+- registrationWithInvalidFiscalCode() : il test tenta di registrare un nuovo utente con un codice fiscale non valido non 
+riuscendoci;
+- testWithInvalidPassword() : questo test tenta di registrare un nuovo utente con una password che non supera il controllo
+sui criteri della password non riuscendoci;
+- loginRegisterLoginButtonScenario() : controlla il corretto funzionamento del pulsante per tornare alla schermata di login
+dalla schermata di registrazione
+
+#### 2. Operazioni sull'aggiunta di una visita o sulla modifica di una visita ####
+- loginAndAddVisit(): il test fa il login e aggiunge una visita;
+- modifyFirstVisitDate() : modifica la data di una visita utilizzandone una valida;
+- modifyFirstVisitTime() : modifica l'ora in cui si vuole effettuare una visita utilizzando un orario con un formato adeguato;
+- modifyFirstVisitMotivation() : inserisce una motivazione valida non andando a sforare i caratteri massimi che si possono 
+inserire;
+
+#### 3. Operazioni sulla schermata welcome ####
+- loginAndLogout() : l'utente logga e esce dalla sezione welcome utilizzando l'apposito bottone di logout;
+- deleteFirstVisit() : elimina la prima visita disponibile nella pagina per controllare il corretto funzionamento del pulsante
+"Elimina";
+- addVisitAndReturnToWelcome() : aggiunge una visita non andando a inserire i valori del form apposito e ritorna alla schemata 
+welcome tramite il pulsante apposito (non verranno aggiunte visite alla schermata welcome);
+- modifyVisitAndReturnToWelcome() : modifica la visita utilizzando la stessa metodologia del test enunciato precedentemente.
+
+Anche in questo caso ci siamo preoccupati di raggiungere una coverage sufficientemente alte sia per i metodi, che per le
+classi che per le linee di codice coperte.
+La coverage generale risulta sufficientemente alta:
+<img alt="e2e coverage" src="images/e2eCoverage.png"/>

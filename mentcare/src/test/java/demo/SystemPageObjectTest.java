@@ -109,10 +109,6 @@ public class SystemPageObjectTest extends DriverSetup {
     @Test
     public void loginRegisterLoginButtonScenario()
     {
-        String name = "laura";
-        String password = "5678";
-        String newMotivation = "edited motivation";
-
         driver.get("http://localhost:8080/");
 
         MentcarePageTest mentcare = new MentcarePageTest(driver);
@@ -236,7 +232,6 @@ public class SystemPageObjectTest extends DriverSetup {
     {
         String name = "laura";
         String password = "5678";
-        String newMotivation = "edited motivation";
 
         driver.get("http://localhost:8080/");
 

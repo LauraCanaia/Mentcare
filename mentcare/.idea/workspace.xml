@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085ef083-3a56-47e7-8767-18825e045043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/utilsCoverage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/e2eCoverage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demo/SystemPageObjectTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
     "Gradle.PersonTest.personCreationWithNoParameters.executor": "Coverage",
     "Gradle.SystemPageObjectTest.addVisitAndReturnToWelcome.executor": "Run",
     "Gradle.SystemPageObjectTest.deleteFirstVisit.executor": "Run",
-    "Gradle.SystemPageObjectTest.executor": "Run",
+    "Gradle.SystemPageObjectTest.executor": "Coverage",
     "Gradle.SystemPageObjectTest.loginAndAddVisit.executor": "Run",
     "Gradle.SystemPageObjectTest.loginAndLogout.executor": "Run",
     "Gradle.SystemPageObjectTest.loginRegisterLoginButtonScenario.executor": "Run",
@@ -168,7 +169,7 @@
       <recent name="C:\Users\Laura\Desktop\Mentcare\mentcare\src\test\resources\geckodriver_win64" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.demo.UserTest and 1 more">
+  <component name="RunManager" selected="Gradle.SystemPageObjectTest">
     <configuration name="ServingWebContentApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.ServingWebContentApplication" />
       <module name="mentcare.main" />
@@ -186,6 +187,30 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="SystemPageObjectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;demo.SystemPageObjectTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="SystemPageObjectTest.tryToAddVisitWithWrongDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -229,34 +254,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="demo.DateValidatorTest and 5 more (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests &quot;demo.DateValidatorTest&quot;" />
-            <option value="--tests &quot;demo.MotivationValidatorTest&quot;" />
-            <option value="--tests &quot;demo.SystemPageObjectTest&quot;" />
-            <option value="--tests &quot;demo.TimeValidatorTest&quot;" />
-            <option value="--tests &quot;demo.UserTest&quot;" />
-            <option value="--tests &quot;demo.VisitTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="demo.DateValidatorTest and 5 more (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -339,19 +336,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ServingWebContentApplication" />
+      <item itemvalue="Gradle.SystemPageObjectTest" />
       <item itemvalue="Gradle.demo.UserTest and 1 more" />
       <item itemvalue="Gradle.SystemPageObjectTest.tryToAddVisitWithWrongDate" />
-      <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (1)" />
       <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (2)" />
       <item itemvalue="Gradle.mentcare [bootRun]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SystemPageObjectTest" />
         <item itemvalue="Gradle.demo.UserTest and 1 more" />
         <item itemvalue="Gradle.SystemPageObjectTest.tryToAddVisitWithWrongDate" />
         <item itemvalue="Gradle.mentcare [bootRun]" />
         <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (2)" />
-        <item itemvalue="Gradle.demo.DateValidatorTest and 5 more (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -371,8 +368,8 @@
     <SUITE FILE_PATH="coverage/mentcare$demo_UserTest_and_1_more__1_.ic" NAME="demo.UserTest and 1 more (1) Coverage Results" MODIFIED="1705744581278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__1_.ic" NAME="demo.SystemPageObjectTest and 2 more (1) Coverage Results" MODIFIED="1705743798407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_UserTest_and_1_more__2_.ic" NAME="demo.UserTest and 1 more (2) Coverage Results" MODIFIED="1705744719688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705485882854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$PersonTest.ic" NAME="PersonTest Coverage Results" MODIFIED="1705485877069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/mentcare$SystemPageObjectTest.ic" NAME="SystemPageObjectTest Coverage Results" MODIFIED="1705763948349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_DateValidatorTest_and_5_more__1_.ic" NAME="demo.DateValidatorTest and 5 more (1) Coverage Results" MODIFIED="1705745975816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_SystemPageObjectTest_and_2_more__2_.ic" NAME="demo.SystemPageObjectTest and 2 more (2) Coverage Results" MODIFIED="1705659548158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mentcare$demo_UserTest_and_1_more.ic" NAME="demo.UserTest and 1 more Coverage Results" MODIFIED="1705759640177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
