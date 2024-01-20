@@ -145,4 +145,31 @@ dal sistema e torna alla schermata di Login.
 
 ****
 
-## Testing ##
+## Testing e Refactoring ##
+
+Per quanto riguarda il testing, ci siamo assicurati di scrivere i testi in modo che andassero a simulare dei comportamenti 
+che possono essere svolti dagli utenti in un contesto reale.
+I test che sono stati scritti e valutati sono stati divisi in 2 categorie:
+- Unit Test : test che sono stati compiuti su tutte le classi del package [model](src/main/java/demo/model) e del package 
+[utils](src/java/demo/utils);
+- End to end test : test che interagiscono con la ui del sistema utilizzano selenium e andando a compiere azioni simili a 
+quelle che farebbe un utente andando a garantire il funzionamento corretto dell'applicazione.
+I test tra l'interazione tra i componenti del sistema non sono stati necessari da implementare in quanto Spring MVC se ne
+occupa intrinsicamente.
+
+Per evitare che il codice subisse un inevitabile degrado ,durante l'implementazione di nuove feature o durante le modifiche
+nel caso alcuni casi di test avessero messo alla luce errori di logica, il codice è stato continuamente revisionato subendo
+di conseguenza refactoring.
+Il refactoring è stato compiuto in contemporanea allo svilupp.
+
+### Unit test ###
+Gli unit test, come scritto in precedenza, si sono concentrati sul package model e sul package utils, e in particolare 
+sul testare il comportamento su ciascun metodo facente parte di ciascuna delle classi.        
+Per le classi model, [user](mentcare/src/main/java/demo/model/User.java) e [visit](mentcare/src/main/java/demo/model/Visit.java),
+si è deciso di scrivere un test che testasse sia i metodi getter e setter, che i costruttori, e sia anche la logica interna.
+
+Per la scrittura degli unit test ci siamo assicurati di raggiungere una coverage il più alto possibile per verificare che
+ogni metodo venisse testato almeno una volta.
+La coverage raggiunta da questa tipologia di test è stata verificata tramite il tool integrato di Intellij e la coverage dei metodi 
+raggiunta è del 100% :
+![model coverage](C:\Users\Laura\Desktop\Mentcare\mentcare\modelCoverage.png)
