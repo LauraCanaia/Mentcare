@@ -256,5 +256,4 @@ public class SystemPageObjectTest extends DriverSetup {
         Assert.assertTrue(welcome.getFirstVisitTimeToString().equals(time));
         Assert.assertTrue(welcome.getFirstVisitMotivationToString().equals(motivation));
     }
-
 }
