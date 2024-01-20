@@ -169,7 +169,7 @@ public class SystemPageObjectTest extends DriverSetup {
     {
         String name = "laura";
         String password = "5678";
-        String newTime = "9:35";
+        String newTime = "09:35";
 
         driver.get("http://localhost:8080/");
 
