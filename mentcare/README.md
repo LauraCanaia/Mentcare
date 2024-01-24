@@ -149,7 +149,7 @@ dal sistema e torna alla schermata di Login.
 
 ****
 
-## Testing e Refactoring ##
+## Quality Assurance ##
 
 Per quanto riguarda il testing, ci siamo assicurati di scrivere i testi in modo che andassero a simulare dei comportamenti 
 che possono essere svolti dagli utenti in un contesto reale.
