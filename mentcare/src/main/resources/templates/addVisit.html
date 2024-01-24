@@ -70,6 +70,12 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
+    .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+    text-align: center;
+}
   </style>
 </head>
 <body>
@@ -100,6 +106,15 @@
 
     <button type="submit">Inserisci</button>
   </form>
+</div>
+<div th:if="${errorDate}" class="error-message">
+  <p th:text="${errorDate}"></p>
+</div>
+<div th:if="${errorTime}" class="error-message">
+  <p th:text="${errorDate}"></p>
+</div>
+<div th:if="${errorLength}" class="error-message">
+  <p th:text="${errorLength}"></p>
 </div>
 </body>
 </html>

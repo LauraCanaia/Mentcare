@@ -1,5 +1,7 @@
 package demo;
 
+import demo.model.User;
+import demo.model.Visit;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -54,7 +56,7 @@ public class VisitTest {
     {
         Visit visit = new Visit();
         Assert.assertNull(visit.getUser());
-        User user = new User("Laura", "Canaia", "CNALRA99H42L157X", "Lampadario145!");
+        User user = new User("Laura", "Laura", "Canaia", "CNALRA99H42L157X", "Lampadario145!");
         visit.setUser(user);
         Assert.assertEquals(user, visit.getUser());
     }

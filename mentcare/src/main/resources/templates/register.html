@@ -98,6 +98,9 @@
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
         <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
         <label for="lastname">Last Name:</label>
         <input type="text" id="lastname" name="lastname" required>
         <br>
@@ -120,6 +123,9 @@
     </div>
     <div th:if="${errorPassword}" class="error-message2">
         <p th:text="${errorPassword}"></p>
+    </div>
+    <div th:if="${errorUsername}" class="error-message2">
+        <p th:text="${errorUsername}"></p>
     </div>
 </div>
 </body>
