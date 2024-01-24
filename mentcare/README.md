@@ -10,6 +10,7 @@ dipendenze Gradle versione 2.3.2 utilizzando come linguaggio di programmazione J
 per quanto riguarda il frontend.
 
 Il testing utilizza selenium e junti 4.12.
+Per i driver utilizzati da selenium abbiamo inserito nel progetto i geckodrivers per windows, linux e mac.
 
 ****
 
