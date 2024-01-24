@@ -155,7 +155,7 @@ Per quanto riguarda il testing, ci siamo assicurati di scrivere i testi in modo 
 che possono essere svolti dagli utenti in un contesto reale.
 I test che sono stati scritti e valutati sono stati divisi in 2 categorie:
 - Unit Test : test che sono stati compiuti su tutte le classi del package [model](src/main/java/demo/model) e del package 
-[utils](src/java/demo/utils);
+[utils](src/main/java/demo/utils);
 - End to end test : test che interagiscono con la ui del sistema utilizzano selenium e andando a compiere azioni simili a 
 quelle che farebbe un utente, andando a garantire il funzionamento corretto dell'applicazione.
 I test tra l'interazione tra i componenti del sistema non sono stati necessari da implementare in quanto Spring MVC se ne
